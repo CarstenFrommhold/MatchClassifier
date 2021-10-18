@@ -1,5 +1,6 @@
-from data_prep import matches_to_table
+import data_prep
 import pandas as pd
+
 
 if __name__ == "__main__":
 
@@ -10,7 +11,6 @@ if __name__ == "__main__":
     Alternativ: Letzte Saison übernehmen
     """
 
-    df_matches = pd.read_csv("data/results_19_20.csv")
+    df_matches = pd.read_csv("data/s_1819.csv")
+    df_matches = data_prep.main(df_matches)
     print(df_matches)
-    table = matches_to_table(df_matches)
-    print(table[table.matchday == 13])
