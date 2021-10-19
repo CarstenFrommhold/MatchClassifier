@@ -5,10 +5,6 @@ import pendulum
 
 """
 TODO: 
-- Nachholspiele korrigieren auf ursprüngliches Datum
-- Übersetzen in Datetime. Beachte Switch ab Saison 1819
-- Dann sortieren nach Datum
-- Nachholspiele korrigieren
 - Stammdaten Vereine 
 - Wo steckt Heimvorteil? Implizit wegen Modellierung.
 """
@@ -79,10 +75,19 @@ def make_datetime(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def correct_catch_up_matches(df_matches: pd.DataFrame) -> pd.DataFrame:
+    """
+    Set originally planned date for all catch up matches
+    Note the bias regarding the "current" table position
+    """
 
     CATCH_UP_GAMES = {
         "29/01/14": "21/12/13",  # Stuttgart vs. Bayern
-        # "16/02/11": "05/02/11",  # HSV vs. St Pauli
+        "13/12/11": "19/11/11",  # Köln vs. Mainz
+        "16/02/11": "05/02/11",  # HSV vs. St Pauli
+        "10/03/2021": "06/02/2021",  # Bielefeld vs. Bremen
+        "03/05/2021": "17/04/2021",  # Mainz vs. Hertha
+        "06/05/2021": "20/04/2021",  # Hertha vs. Freiburg
+        "12/05/2021": "24/04/2021",  # Schalke vs. Hertha
     }
 
     df_matches["Date"] = df_matches["Date"].replace(CATCH_UP_GAMES)
