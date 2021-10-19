@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import pandasql as psql
+import pendulum
 
 """
 TODO: 
@@ -9,7 +10,7 @@ TODO:
 - Dann sortieren nach Datum
 - Nachholspiele korrigieren
 - Stammdaten Vereine 
-- Wo steckt Heimvorteil? 
+- Wo steckt Heimvorteil? Implizit wegen Modellierung.
 """
 
 
@@ -18,7 +19,6 @@ def main(df_matches: pd.DataFrame) -> pd.DataFrame:
     df_matches = prepare_matches(df_matches)
     df_matches = df_matches[["matchday", "HomeTeam", "AwayTeam", "HomeGoals", "AwayGoals"]]
     df_table = matches_to_table(df_matches)
-    sanity_check_table(df_table)
 
     for kpi in ["Goals", "Goals_against", "Goal_difference", "Points"]:
         df_table[f"Avg_{kpi}"] = df_table[kpi] / df_table["matchday"]
@@ -39,15 +39,54 @@ def main(df_matches: pd.DataFrame) -> pd.DataFrame:
     """
     df_matches = psql.sqldf(q, locals())  # https://github.com/yhat/pandasql/issues/53
 
+    df_matches = df_matches.drop("matchday_pre", axis=1)
+
+    if not sanity_check_matches(df_matches):
+        raise SanityError("Take a look at the matches input.")
+
     return df_matches
 
 
 def prepare_matches(df_matches: pd.DataFrame) -> pd.DataFrame:
+    """
+    - Rename Goal columns
+    - Create Matchday column
+        - correct catch up games
+        - sort and create matchday
+    """
     df_matches = df_matches.rename({
         "FTHG": "HomeGoals",
         "FTAG": "AwayGoals"
     }, axis="columns")
+    df_matches = correct_catch_up_matches(df_matches)
+    df_matches = make_datetime(df_matches)
+    df_matches = df_matches.sort_values(by="Datetime").reset_index().drop("index", axis=1)  # reset index!
     df_matches["matchday"] = np.ceil((df_matches.index + 1) / 9)
+
+    if not sanity_check_matches(df_matches):
+        raise SanityError("Take a look at the matches input.")
+
+    return df_matches
+
+
+def make_datetime(df: pd.DataFrame) -> pd.DataFrame:
+    """ One observes a switch in datetime format given the matches. """
+    try:
+        df["Datetime"] = df["Date"].apply(lambda x: pendulum.from_format(x, 'DD/MM/YY'))
+    except:
+        df["Datetime"] = df["Date"].apply(lambda x: pendulum.from_format(x, 'DD/MM/YYYY'))
+    return df
+
+
+def correct_catch_up_matches(df_matches: pd.DataFrame) -> pd.DataFrame:
+
+    CATCH_UP_GAMES = {
+        "29/01/14": "21/12/13",  # Stuttgart vs. Bayern
+        # "16/02/11": "05/02/11",  # HSV vs. St Pauli
+    }
+
+    df_matches["Date"] = df_matches["Date"].replace(CATCH_UP_GAMES)
+
     return df_matches
 
 
@@ -59,7 +98,6 @@ def matches_to_table(df_matches: pd.DataFrame) -> pd.DataFrame:
     - Matches contains columns "matchday", "HomeTeam", "AwayTeam", "HomeGoals", "AwayGoals"
     """
 
-    df_matches = prepare_matches(df_matches)
     df_matches["Goal_difference"] = df_matches["HomeGoals"] - df_matches["AwayGoals"]
     df_matches["Points_Home"] = df_matches["Goal_difference"].apply(lambda x: 3 if x > 0 else 1 if x == 0 else 0)
 
@@ -106,7 +144,17 @@ def add_matchday_zero(table: pd.DataFrame) -> pd.DataFrame:
 
 def sanity_check_table(df_table: pd.DataFrame) -> bool:
     """Each matchday should include 18 teams."""
-    return df_table.groupby(by=["matchday"]).Team.count().unique() == [18]
+    print(df_table.groupby(by=["matchday"]).Team.count())
+    return list(df_table.groupby(by=["matchday"]).Team.count().unique()) == [18]
+
+
+def sanity_check_matches(df_matches: pd.DataFrame) -> bool:
+    """ 306 matches and 17 matches for each Home & Away Team. """
+    s1 = len(df_matches) == 306
+    s2 = list(df_matches.groupby(by=["HomeTeam"]).AwayTeam.count().unique()) == [17]
+    s3 = list(df_matches.groupby(by=["AwayTeam"]).HomeTeam.count().unique()) == [17]
+    s4 = list(df_matches.groupby(by=["matchday"]).HomeTeam.count().unique()) == [9]
+    return s1 and s2 and s3 and s4
 
 
 class SanityError(Exception):
