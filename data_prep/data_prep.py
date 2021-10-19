@@ -37,6 +37,11 @@ def main(df_matches: pd.DataFrame) -> pd.DataFrame:
 
     df_matches = df_matches.drop("matchday_pre", axis=1)
 
+    # target variable
+    df_matches["result"] = df_matches["Points_Home"].replace({
+        3: "1", 1: "X", 0: "2"
+    })
+
     if not sanity_check_matches(df_matches):
         raise SanityError("Take a look at the matches input.")
 
@@ -149,7 +154,6 @@ def add_matchday_zero(table: pd.DataFrame) -> pd.DataFrame:
 
 def sanity_check_table(df_table: pd.DataFrame) -> bool:
     """Each matchday should include 18 teams."""
-    print(df_table.groupby(by=["matchday"]).Team.count())
     return list(df_table.groupby(by=["matchday"]).Team.count().unique()) == [18]
 
 
