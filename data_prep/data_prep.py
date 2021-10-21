@@ -42,6 +42,9 @@ def main(df_matches: pd.DataFrame) -> pd.DataFrame:
         3: "1", 1: "X", 0: "2"
     })
 
+    # Feature Engineering
+    df_matches["AvgPointDelta"] = df_matches["HomeAvgPoints"] - df_matches["AwayAvgPoints"]
+
     if not sanity_check_matches(df_matches):
         raise SanityError("Take a look at the matches input.")
 
