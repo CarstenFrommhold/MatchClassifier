@@ -38,6 +38,8 @@ def main(df_matches: pd.DataFrame) -> pd.DataFrame:
     df_matches = df_matches.drop("matchday_pre", axis=1)
 
     # target variable
+    df_matches["Goal_difference"] = df_matches["HomeGoals"] - df_matches["AwayGoals"]
+    df_matches["Points_Home"] = df_matches["Goal_difference"].apply(lambda x: 3 if x > 0 else 1 if x == 0 else 0)
     df_matches["result"] = df_matches["Points_Home"].replace({
         3: "1", 1: "X", 0: "2"
     })
@@ -110,9 +112,6 @@ def matches_to_table(df_matches: pd.DataFrame) -> pd.DataFrame:
     - List of matches is sorted correctly (ascending with respect to matchdays)
     - Matches contains columns "matchday", "HomeTeam", "AwayTeam", "HomeGoals", "AwayGoals"
     """
-
-    df_matches["Goal_difference"] = df_matches["HomeGoals"] - df_matches["AwayGoals"]
-    df_matches["Points_Home"] = df_matches["Goal_difference"].apply(lambda x: 3 if x > 0 else 1 if x == 0 else 0)
 
     keep = ["matchday", "HomeTeam", "AwayTeam", "HomeGoals", "AwayGoals"]
     df_home = df_matches.loc[:, keep].rename(

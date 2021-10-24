@@ -10,8 +10,8 @@ if __name__ == "__main__":
 
     model = DecisionTreeModel(
         data, features, target, max_depth=2)
-    # model = Random(data, features, target)
-    # model = Simple(data, features, target)
+    #model = Random(data, features, target)
+    #model = Simple(data, features, target)
     model.load_data()
     model.train()
     model.evaluate()
