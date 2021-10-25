@@ -40,7 +40,7 @@ def main(df_matches: pd.DataFrame) -> pd.DataFrame:
     """ Create target variable
     """
     df_matches = create_target_variable(df_matches)
-    # df_matches = add_rolling_kpi(df_matches)
+    df_matches = add_rolling_kpi(df_matches)
 
     if not sanity_check_matches(df_matches):
         raise SanityError("Take a look at the matches input.")
@@ -63,6 +63,7 @@ def add_rolling_kpi(df_matches: pd.DataFrame) -> pd.DataFrame:
     df_ = pd.DataFrame()
     for team in df_performance["Team"].unique():
         df_team_performance = df_performance[df_performance["Team"] == team].copy()
+        df_team_performance = df_team_performance.sort_values(by=["Matchday", "Team"])
 
         for series in [3, 5]:
             df_team_performance[f"Points_last{series}"] = df_team_performance["Points"].rolling(series + 1).sum() - df_performance["Points"]

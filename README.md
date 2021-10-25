@@ -25,7 +25,6 @@ One observes a soothing result: These values are not outstanding.
 
 ### Feature Ideas
 
-* trend given the last n matches
 * clubs master data like members, age, stadium capacity -> embedding
 * last match between two teams
 

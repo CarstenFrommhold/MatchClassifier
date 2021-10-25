@@ -5,7 +5,7 @@ import random as rd
 from typing import List
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import precision_score, recall_score, accuracy_score
+from sklearn.metrics import precision_score, recall_score, accuracy_score, roc_auc_score
 
 
 class Baseline:
@@ -25,11 +25,19 @@ class Baseline:
         self.precision = precision_score(self.y_test, self.y_pred, average="weighted")
         self.recall = recall_score(self.y_test, self.y_pred, average="weighted")
         self.accuracy = accuracy_score(self.y_test, self.y_pred)
+        try:
+            self.y_pred_proba = self.predict_proba(self.x_test)
+            self.auc = roc_auc_score(self.y_test, self.y_pred_proba, multi_class="ovo")
+        except:
+           self.auc = "na"
 
     def fit(self, X, y):
         pass
 
     def predict(self, X):
+        pass
+
+    def predict_proba(self, X):
         pass
 
     def train(self):
@@ -68,6 +76,9 @@ class DecisionTreeModel(Baseline):
 
     def predict(self, X):
         return self.tree.predict(X)
+
+    def predict_proba(self, X):
+        return self.tree.predict_proba(X)
 
     def train(self):
         self.fit(..., ...)

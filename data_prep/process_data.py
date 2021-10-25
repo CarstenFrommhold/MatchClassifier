@@ -21,4 +21,4 @@ if __name__ == "__main__":
         df_matches.to_csv(f"data/prepared_matches/s_{season}.csv", index=False)
 
     df = pd.concat([pd.read_csv(f"data/prepared_matches/s_{season}.csv") for season in seasons])
-    df.to_csv(f"data/prepared_matches/10y.csv", index=False)
+    df.to_csv(f"data/prepared_matches/training_data_10y.csv", index=False)

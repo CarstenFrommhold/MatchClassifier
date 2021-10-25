@@ -3,19 +3,19 @@ from baseline import DecisionTreeModel, Random, Simple
 
 if __name__ == "__main__":
 
-    data = pd.read_csv("../data/prepared_matches/10y.csv")
-    data = data.loc[data.matchday >= 6]
-    features = ["HomeAvgPoints", "AwayAvgPoints", "AvgPointDelta"]
+    data = pd.read_csv("../data/prepared_matches/training_data_10y.csv")
+    data = data.loc[data.Matchday >= 6]
+    features = ["HomeAvgPoints", "AwayAvgPoints", "AvgPointDelta",
+                "HomePoints_last3", "HomeGoals_last3", "AwayPoints_last3", "AwayGoals_last3",
+                "HomePoints_last5", "HomeGoals_last5", "AwayPoints_last5", "AwayGoals_last5"]
     target = "result"
 
     model = DecisionTreeModel(
-        data, features, target, max_depth=2)
+        data, features, target, max_depth=3)
     #model = Random(data, features, target)
     #model = Simple(data, features, target)
     model.load_data()
     model.train()
     model.evaluate()
-    print(model.accuracy, model.precision, model.recall)
+    print(model.accuracy, model.precision, model.auc)
 
-# For the moment, the performance sucks of course.
-# But this should act as a template.
