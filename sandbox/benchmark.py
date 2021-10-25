@@ -24,7 +24,7 @@ def sum_(a, b, c):
 
 if __name__ == "__main__":
 
-    season = 1819
+    season = 2021
 
     df = pd.read_csv(f"../data/matches/s_{season}.csv")
     df = df.rename({
@@ -69,25 +69,3 @@ if __name__ == "__main__":
                         labels=["1", "2", "X"],  # must be ordered
                         multi_class="ovr")  # ovo, ovr
     print(f"Auc: {round(roc, 3)}")
-
-"""
-To get an idea of a benchmark.
-
-B365 given season 1819 leads to:
-Accuracy: 0.542
-Precision: 0.729
-Recall: 0.542
-Auc: 0.662
- 
-B365 given season 1920 leads to:
-Accuracy: 0.52
-Precision: 0.698
-Recall: 0.52
-Auc: 0.654
-
-B365 given season 2021 leads to:
-Accuracy: 0.513
-Precision: 0.699
-Recall: 0.513
-Auc: 0.681
-"""

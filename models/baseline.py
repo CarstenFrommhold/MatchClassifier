@@ -71,11 +71,3 @@ class DecisionTreeModel(Baseline):
 
     def train(self):
         self.fit(..., ...)
-
-
-"""
-Some other ideas:
-- Predict given the results of the last games between two teams
-- Predict given the results of the last teams (row)
-- Predict given simple classifications
-"""
