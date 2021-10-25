@@ -17,10 +17,18 @@ Season | Accuracy | Precision |  AUC
 19/20 | 0.52 | 0.698 | 0.654
 20/21 | 0.513 | 0.699 | 0.681
 
-One observes a soothing result: These values are not outstanding. Football is no mathematics. 
+One observes a soothing result: These values are not outstanding.
 
-## Feature Ideas
+## Development
+
+* Resolve cold start problem for the first matchdays.
+
+### Feature Ideas
 
 * trend given the last n matches
 * clubs master data like members, age, stadium capacity -> embedding
 * last match between two teams
+
+## Notes
+
+* Home advantage is implicit in the modeling because the variables are set sensitive to home and away position.

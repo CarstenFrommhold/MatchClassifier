@@ -1,13 +1,9 @@
+""" Data preparation given -one- season
+"""
 import pandas as pd
 import numpy as np
 import pandasql as psql
 import pendulum
-
-"""
-TODO: 
-- Stammdaten Vereine 
-- Wo steckt Heimvorteil? Implizit wegen Modellierung.
-"""
 
 
 def main(df_matches: pd.DataFrame) -> pd.DataFrame:
@@ -20,6 +16,9 @@ def main(df_matches: pd.DataFrame) -> pd.DataFrame:
         df_table[f"Avg_{kpi}"] = df_table[kpi] / df_table["matchday"]
 
     df_matches["matchday_pre"] = df_matches["matchday"] - 1
+
+    """ Some feature engineering 
+    """
 
     q = """
     SELECT a.*,
@@ -34,23 +33,37 @@ def main(df_matches: pd.DataFrame) -> pd.DataFrame:
     AND a.HomeTeam = c.Team AND a.matchday_pre = c.matchday
     """
     df_matches = psql.sqldf(q, locals())  # https://github.com/yhat/pandasql/issues/53
-
     df_matches = df_matches.drop("matchday_pre", axis=1)
 
-    # target variable
+    df_matches["AvgPointDelta"] = df_matches["HomeAvgPoints"] - df_matches["AwayAvgPoints"]
+
+    """ Create target variable
+    """
+    df_matches = create_target_variable(df_matches)
+
+    if not sanity_check_matches(df_matches):
+        raise SanityError("Take a look at the matches input.")
+
+    return df_matches
+
+
+def add_rolling_kpi(df_matches: pd.DataFrame) -> pd.DataFrame:
+
+    df = df_matches.copy()
+
+    return df_matches
+
+
+def create_target_variable(df_matches: pd.DataFrame) -> pd.DataFrame:
+
     df_matches["Goal_difference"] = df_matches["HomeGoals"] - df_matches["AwayGoals"]
     df_matches["Points_Home"] = df_matches["Goal_difference"].apply(lambda x: 3 if x > 0 else 1 if x == 0 else 0)
     df_matches["result"] = df_matches["Points_Home"].replace({
         3: "1", 1: "X", 0: "2"
     })
 
-    # Feature Engineering
-    df_matches["AvgPointDelta"] = df_matches["HomeAvgPoints"] - df_matches["AwayAvgPoints"]
-
-    if not sanity_check_matches(df_matches):
-        raise SanityError("Take a look at the matches input.")
-
     return df_matches
+
 
 
 def prepare_matches(df_matches: pd.DataFrame) -> pd.DataFrame:
