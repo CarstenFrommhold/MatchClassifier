@@ -1,6 +1,9 @@
 # MatchClassifier
 
-Predictions of football matches for the german bundesliga.
+This repo aims to predict odds of football matches for the german bundesliga.
+Note that, at the moment, it acts as a playground to do some first steps.
+To start, match outcomes should be predicted. #goals and other kpi are note taken into account so far. 
+A match has three potential outcomes. The home team wins (general marked with "1"), the away team wins ("2") or a draft ("X").
 
 ## Benchmark
 
@@ -25,9 +28,10 @@ One observes a soothing result: These values are not outstanding.
 
 ### Feature Ideas
 
-* clubs master data like members, age, stadium capacity -> embedding
-* last match between two teams
+* clubs master data like members, age, stadium capacity -> create embeddings
+* last match between two teams (one can find [here](http://www.bulibox.de/downloads/download.html), for example)
 
 ## Notes
 
 * Home advantage is implicit in the modeling because the variables are set sensitive to home and away position.
+* Explicit modelling to get an insight of feature importance?
