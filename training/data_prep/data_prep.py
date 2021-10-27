@@ -6,11 +6,13 @@ import pandasql as psql
 import pendulum
 
 
-def main(df_matches: pd.DataFrame, full_season: bool = True) -> pd.DataFrame:
+def main(
+    df_matches: pd.DataFrame, full_season: bool = True, table_output_path: str = None
+) -> pd.DataFrame:
 
     df_matches = prepare_matches(df_matches, full_season)
     df_matches = df_matches[["Matchday", "HomeTeam", "AwayTeam", "HomeGoals", "AwayGoals"]]
-    df_table = matches_to_table(df_matches)
+    df_table = matches_to_table(df_matches, full_season, table_output_path)
 
     for kpi in ["Goals", "GoalsAgainst", "GoalDifference", "Points"]:
         df_table[f"Avg_{kpi}"] = df_table[kpi] / df_table["Matchday"]
@@ -149,7 +151,9 @@ def correct_catch_up_matches(df_matches: pd.DataFrame) -> pd.DataFrame:
     return df_matches
 
 
-def matches_to_table(df_matches: pd.DataFrame, full_season: bool = True) -> pd.DataFrame:
+def matches_to_table(
+        df_matches: pd.DataFrame, full_season: bool = True,
+        output_path: str = None) -> pd.DataFrame:
     """
     Creates a table dataframe given a dataframe with matches
     Assumptions:
@@ -186,6 +190,9 @@ def matches_to_table(df_matches: pd.DataFrame, full_season: bool = True) -> pd.D
         if not sanity_check_table(df):
             raise SanityError("Take a look at the table creation.")
 
+    if output_path:
+        df.to_csv(output_path)
+
     return df
 
 
@@ -196,7 +203,7 @@ def add_matchday_zero(table: pd.DataFrame) -> pd.DataFrame:
     md_0 = pd.DataFrame(
         [[team] + [0] * len(cols_without_team) for team in teams],
         columns=["Team"] + cols_without_team)
-    return pd.concat([md_0, table]).reset_index().drop(columns=["index"])
+    return pd.concat([table, md_0]).reset_index().drop(columns=["index"])
 
 
 def sanity_check_table(df_table: pd.DataFrame) -> bool:

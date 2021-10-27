@@ -15,4 +15,4 @@ if __name__ == "__main__":
 
     api = tweepy.API(auth)
 
-    api.update_status("Das Pferd frisst keinen Gurkensalat. #isso")
+    # api.update_status("Das Pferd frisst keinen Gurkensalat. #isso")
