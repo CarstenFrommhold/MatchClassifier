@@ -15,7 +15,7 @@ def update_current_season():
     matches = f'https://www.football-data.co.uk/mmz4281/2122/D1.csv'
     os.system(f"echo download {matches}")
     os.system(f"wget {matches} ")
-    os.system(f"mv D1.csv ../data/current/season/s_2122.csv")
+    os.system(f"mv D1.csv ../data/current_season/s_2122.csv")
 
 
 def rename(df):
@@ -77,7 +77,7 @@ def create_twitter_messages(df_predictions: pd.DataFrame, matchday: int) -> Tupl
 
 if __name__ == "__main__":
 
-    # update_current_season()
+    update_current_season()
     df_matchplan = pd.read_csv(matchplan_path)
     df_matchplan = rename(df_matchplan)
 

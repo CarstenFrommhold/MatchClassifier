@@ -10,8 +10,9 @@ jobs:
     - uses: actions/checkout@v2
       with:
        token: ${{ secrets.GITHUB_TOKEN }}
-    - name: Say hello and run python
+    - name: Say hello, install package and predict next matchday
       run: |-
         echo "Hey!"
-        pip install -r "requirements.txt"
-        python3 current_season/predict_next_matchday.py
+        python3 setup.py install
+        cd sandbox
+        python3 predict_next_matchday.py
