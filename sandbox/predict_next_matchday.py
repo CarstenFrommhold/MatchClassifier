@@ -1,20 +1,13 @@
-import fuzzywuzzy.fuzz
 import pandas as pd
-import numpy as np
 import pendulum
 import os
-import sys
-sys.path.append("../training/data_prep")
-import data_prep
-from typing import List, Dict, Tuple
+import match_classifier.data_prep as data_prep
+from typing import Dict, Tuple
 import joblib
-import math
+from match_classifier.utils import map_names
+from match_classifier.config import FEATURES
 
-
-matchplan_path = "data/matchplan_2122.csv"
-features = ["HomeAvgPoints", "AwayAvgPoints", "AvgPointDelta",
-            "HomePoints_last3", "HomeGoals_last3", "AwayPoints_last3", "AwayGoals_last3",
-            "HomePoints_last5", "HomeGoals_last5", "AwayPoints_last5", "AwayGoals_last5"]
+matchplan_path = "../data/current_season/matchplan_2122.csv"
 
 
 def update_current_season():
@@ -22,7 +15,7 @@ def update_current_season():
     matches = f'https://www.football-data.co.uk/mmz4281/2122/D1.csv'
     os.system(f"echo download {matches}")
     os.system(f"wget {matches} ")
-    os.system(f"mv D1.csv data/s_2122.csv")
+    os.system(f"mv D1.csv ../data/current/season/s_2122.csv")
 
 
 def rename(df):
@@ -34,17 +27,6 @@ def rename(df):
     }, axis=1)
 
     return df
-
-
-def map_names(from_: List[str], to: List[str]) -> Dict:
-    """ Simple mapping helper
-    Allocate each entry in from_ to the "nearest" entry in to
-    """
-    map = {}
-    for entry_from in from_:
-        ratios = [fuzzywuzzy.fuzz.ratio(entry_from, entry_to) for entry_to in to]
-        map[entry_from] = to[np.argmax(ratios)]
-    return map
 
 
 def reciprocal_value(x: float) -> float:
@@ -95,11 +77,11 @@ def create_twitter_messages(df_predictions: pd.DataFrame, matchday: int) -> Tupl
 
 if __name__ == "__main__":
 
-    update_current_season()
+    # update_current_season()
     df_matchplan = pd.read_csv(matchplan_path)
     df_matchplan = rename(df_matchplan)
 
-    df_matches_played = pd.read_csv("data/s_2122.csv")
+    df_matches_played = pd.read_csv("../data/current_season/s_2122.csv")
 
     n_matches_played = len(df_matches_played)
     if n_matches_played % 9 != 0:
@@ -118,10 +100,10 @@ if __name__ == "__main__":
     data = pd.concat([df_matches_played, df_next_matchday]).reset_index().drop("index", axis=1)
     data = data_prep.main(data, full_season=False)
 
-    keep = ["Matchday", "HomeTeam", "AwayTeam"] + features
+    keep = ["Matchday", "HomeTeam", "AwayTeam"] + FEATURES
     df_prediction_input = data.loc[data.Matchday == next_matchday, keep].reset_index().drop("index", axis=1)
-    model = joblib.load("../training/models/model.p")
-    predictions = model.predict_proba(df_prediction_input[features])
+    model = joblib.load("model.p")
+    predictions = model.predict_proba(df_prediction_input[FEATURES])
     df_odds = pd.DataFrame(predictions, columns=["1", "2", "X"])
     for result in ["1", "2", "X"]:
         df_odds[result] = df_odds[result].apply(lambda x: round(reciprocal_value(x), 2))
