@@ -1,0 +1,307 @@
+Datum,Spieltag,Heimmannschaft,Gastmannschaft
+13/08/2021 20:30   (Fri),1,Borussia Mönchengladbach,FC Bayern München
+14./15.08.2021 ,1,Borussia Dortmund,Eintracht Frankfurt
+14./15.08.2021 ,1,VfL Wolfsburg,VfL Bochum
+14./15.08.2021 ,1,1. FC Union Berlin,Bayer 04 Leverkusen
+14./15.08.2021 ,1,VfB Stuttgart,SpVgg Greuther Fürth
+14./15.08.2021 ,1,1. FSV Mainz 05,RB Leipzig
+14./15.08.2021 ,1,FC Augsburg,TSG Hoffenheim
+14./15.08.2021 ,1,DSC Arminia Bielefeld,Sport-Club Freiburg
+14./15.08.2021 ,1,1. FC Köln,Hertha BSC
+20.-22.08.2021 ,2,FC Bayern München,1. FC Köln
+20.-22.08.2021 ,2,RB Leipzig,VfB Stuttgart
+20.-22.08.2021 ,2,Eintracht Frankfurt,FC Augsburg
+20.-22.08.2021 ,2,Bayer 04 Leverkusen,Borussia Mönchengladbach
+20.-22.08.2021 ,2,Sport-Club Freiburg,Borussia Dortmund
+20.-22.08.2021 ,2,TSG Hoffenheim,1. FC Union Berlin
+20.-22.08.2021 ,2,Hertha BSC,VfL Wolfsburg
+20.-22.08.2021 ,2,VfL Bochum,1. FSV Mainz 05
+20.-22.08.2021 ,2,SpVgg Greuther Fürth,DSC Arminia Bielefeld
+27.-29.08.2021 ,3,FC Bayern München,Hertha BSC
+27.-29.08.2021 ,3,Borussia Dortmund,TSG Hoffenheim
+27.-29.08.2021 ,3,VfL Wolfsburg,RB Leipzig
+27.-29.08.2021 ,3,1. FC Union Berlin,Borussia Mönchengladbach
+27.-29.08.2021 ,3,VfB Stuttgart,Sport-Club Freiburg
+27.-29.08.2021 ,3,1. FSV Mainz 05,SpVgg Greuther Fürth
+27.-29.08.2021 ,3,FC Augsburg,Bayer 04 Leverkusen
+27.-29.08.2021 ,3,DSC Arminia Bielefeld,Eintracht Frankfurt
+27.-29.08.2021 ,3,1. FC Köln,VfL Bochum
+11./12.09.2021 ,4,RB Leipzig,FC Bayern München
+11./12.09.2021 ,4,Eintracht Frankfurt,VfB Stuttgart
+11./12.09.2021 ,4,Bayer 04 Leverkusen,Borussia Dortmund
+11./12.09.2021 ,4,1. FC Union Berlin,FC Augsburg
+11./12.09.2021 ,4,Borussia Mönchengladbach,DSC Arminia Bielefeld
+11./12.09.2021 ,4,Sport-Club Freiburg,1. FC Köln
+11./12.09.2021 ,4,TSG Hoffenheim,1. FSV Mainz 05
+11./12.09.2021 ,4,VfL Bochum,Hertha BSC
+11./12.09.2021 ,4,SpVgg Greuther Fürth,VfL Wolfsburg
+17.-19.09.2021 ,5,FC Bayern München,VfL Bochum
+17.-19.09.2021 ,5,Borussia Dortmund,1. FC Union Berlin
+17.-19.09.2021 ,5,VfL Wolfsburg,Eintracht Frankfurt
+17.-19.09.2021 ,5,VfB Stuttgart,Bayer 04 Leverkusen
+17.-19.09.2021 ,5,1. FSV Mainz 05,Sport-Club Freiburg
+17.-19.09.2021 ,5,FC Augsburg,Borussia Mönchengladbach
+17.-19.09.2021 ,5,Hertha BSC,SpVgg Greuther Fürth
+17.-19.09.2021 ,5,DSC Arminia Bielefeld,TSG Hoffenheim
+17.-19.09.2021 ,5,1. FC Köln,RB Leipzig
+24.-26.09.2021 ,6,RB Leipzig,Hertha BSC
+24.-26.09.2021 ,6,Eintracht Frankfurt,1. FC Köln
+24.-26.09.2021 ,6,Bayer 04 Leverkusen,1. FSV Mainz 05
+24.-26.09.2021 ,6,1. FC Union Berlin,DSC Arminia Bielefeld
+24.-26.09.2021 ,6,Borussia Mönchengladbach,Borussia Dortmund
+24.-26.09.2021 ,6,Sport-Club Freiburg,FC Augsburg
+24.-26.09.2021 ,6,TSG Hoffenheim,VfL Wolfsburg
+24.-26.09.2021 ,6,VfL Bochum,VfB Stuttgart
+24.-26.09.2021 ,6,SpVgg Greuther Fürth,FC Bayern München
+01.-03.10.2021 ,7,FC Bayern München,Eintracht Frankfurt
+01.-03.10.2021 ,7,RB Leipzig,VfL Bochum
+01.-03.10.2021 ,7,Borussia Dortmund,FC Augsburg
+01.-03.10.2021 ,7,VfL Wolfsburg,Borussia Mönchengladbach
+01.-03.10.2021 ,7,VfB Stuttgart,TSG Hoffenheim
+01.-03.10.2021 ,7,1. FSV Mainz 05,1. FC Union Berlin
+01.-03.10.2021 ,7,Hertha BSC,Sport-Club Freiburg
+01.-03.10.2021 ,7,DSC Arminia Bielefeld,Bayer 04 Leverkusen
+01.-03.10.2021 ,7,1. FC Köln,SpVgg Greuther Fürth
+15.-17.10.2021 ,8,Borussia Dortmund,1. FSV Mainz 05
+15.-17.10.2021 ,8,Eintracht Frankfurt,Hertha BSC
+15.-17.10.2021 ,8,Bayer 04 Leverkusen,FC Bayern München
+15.-17.10.2021 ,8,1. FC Union Berlin,VfL Wolfsburg
+15.-17.10.2021 ,8,Borussia Mönchengladbach,VfB Stuttgart
+15.-17.10.2021 ,8,Sport-Club Freiburg,RB Leipzig
+15.-17.10.2021 ,8,TSG Hoffenheim,1. FC Köln
+15.-17.10.2021 ,8,FC Augsburg,DSC Arminia Bielefeld
+15.-17.10.2021 ,8,SpVgg Greuther Fürth,VfL Bochum
+22.-24.10.2021 ,9,FC Bayern München,TSG Hoffenheim
+22.-24.10.2021 ,9,RB Leipzig,SpVgg Greuther Fürth
+22.-24.10.2021 ,9,VfL Wolfsburg,Sport-Club Freiburg
+22.-24.10.2021 ,9,VfB Stuttgart,1. FC Union Berlin
+22.-24.10.2021 ,9,1. FSV Mainz 05,FC Augsburg
+22.-24.10.2021 ,9,Hertha BSC,Borussia Mönchengladbach
+22.-24.10.2021 ,9,DSC Arminia Bielefeld,Borussia Dortmund
+22.-24.10.2021 ,9,1. FC Köln,Bayer 04 Leverkusen
+22.-24.10.2021 ,9,VfL Bochum,Eintracht Frankfurt
+29.-31.10.2021 ,10,Borussia Dortmund,1. FC Köln
+29.-31.10.2021 ,10,Eintracht Frankfurt,RB Leipzig
+29.-31.10.2021 ,10,Bayer 04 Leverkusen,VfL Wolfsburg
+29.-31.10.2021 ,10,1. FC Union Berlin,FC Bayern München
+29.-31.10.2021 ,10,Borussia Mönchengladbach,VfL Bochum
+29.-31.10.2021 ,10,Sport-Club Freiburg,SpVgg Greuther Fürth
+29.-31.10.2021 ,10,TSG Hoffenheim,Hertha BSC
+29.-31.10.2021 ,10,FC Augsburg,VfB Stuttgart
+29.-31.10.2021 ,10,DSC Arminia Bielefeld,1. FSV Mainz 05
+05.-07.11.2021 ,11,FC Bayern München,Sport-Club Freiburg
+05.-07.11.2021 ,11,RB Leipzig,Borussia Dortmund
+05.-07.11.2021 ,11,VfL Wolfsburg,FC Augsburg
+05.-07.11.2021 ,11,VfB Stuttgart,DSC Arminia Bielefeld
+05.-07.11.2021 ,11,1. FSV Mainz 05,Borussia Mönchengladbach
+05.-07.11.2021 ,11,Hertha BSC,Bayer 04 Leverkusen
+05.-07.11.2021 ,11,1. FC Köln,1. FC Union Berlin
+05.-07.11.2021 ,11,VfL Bochum,TSG Hoffenheim
+05.-07.11.2021 ,11,SpVgg Greuther Fürth,Eintracht Frankfurt
+19.-21.11.2021 ,12,Borussia Dortmund,VfB Stuttgart
+19.-21.11.2021 ,12,Bayer 04 Leverkusen,VfL Bochum
+19.-21.11.2021 ,12,1. FC Union Berlin,Hertha BSC
+19.-21.11.2021 ,12,Borussia Mönchengladbach,SpVgg Greuther Fürth
+19.-21.11.2021 ,12,Sport-Club Freiburg,Eintracht Frankfurt
+19.-21.11.2021 ,12,TSG Hoffenheim,RB Leipzig
+19.-21.11.2021 ,12,1. FSV Mainz 05,1. FC Köln
+19.-21.11.2021 ,12,FC Augsburg,FC Bayern München
+19.-21.11.2021 ,12,DSC Arminia Bielefeld,VfL Wolfsburg
+26.-28.11.2021 ,13,FC Bayern München,DSC Arminia Bielefeld
+26.-28.11.2021 ,13,RB Leipzig,Bayer 04 Leverkusen
+26.-28.11.2021 ,13,VfL Wolfsburg,Borussia Dortmund
+26.-28.11.2021 ,13,Eintracht Frankfurt,1. FC Union Berlin
+26.-28.11.2021 ,13,VfB Stuttgart,1. FSV Mainz 05
+26.-28.11.2021 ,13,Hertha BSC,FC Augsburg
+26.-28.11.2021 ,13,1. FC Köln,Borussia Mönchengladbach
+26.-28.11.2021 ,13,VfL Bochum,Sport-Club Freiburg
+26.-28.11.2021 ,13,SpVgg Greuther Fürth,TSG Hoffenheim
+03.-05.12.2021 ,14,Borussia Dortmund,FC Bayern München
+03.-05.12.2021 ,14,Bayer 04 Leverkusen,SpVgg Greuther Fürth
+03.-05.12.2021 ,14,1. FC Union Berlin,RB Leipzig
+03.-05.12.2021 ,14,Borussia Mönchengladbach,Sport-Club Freiburg
+03.-05.12.2021 ,14,VfB Stuttgart,Hertha BSC
+03.-05.12.2021 ,14,TSG Hoffenheim,Eintracht Frankfurt
+03.-05.12.2021 ,14,1. FSV Mainz 05,VfL Wolfsburg
+03.-05.12.2021 ,14,FC Augsburg,VfL Bochum
+03.-05.12.2021 ,14,DSC Arminia Bielefeld,1. FC Köln
+10.-12.12.2021 ,15,FC Bayern München,1. FSV Mainz 05
+10.-12.12.2021 ,15,RB Leipzig,Borussia Mönchengladbach
+10.-12.12.2021 ,15,VfL Wolfsburg,VfB Stuttgart
+10.-12.12.2021 ,15,Eintracht Frankfurt,Bayer 04 Leverkusen
+10.-12.12.2021 ,15,Sport-Club Freiburg,TSG Hoffenheim
+10.-12.12.2021 ,15,Hertha BSC,DSC Arminia Bielefeld
+10.-12.12.2021 ,15,1. FC Köln,FC Augsburg
+10.-12.12.2021 ,15,VfL Bochum,Borussia Dortmund
+10.-12.12.2021 ,15,SpVgg Greuther Fürth,1. FC Union Berlin
+14./15.12.2021 ,16,Borussia Dortmund,SpVgg Greuther Fürth
+14./15.12.2021 ,16,VfL Wolfsburg,1. FC Köln
+14./15.12.2021 ,16,Bayer 04 Leverkusen,TSG Hoffenheim
+14./15.12.2021 ,16,1. FC Union Berlin,Sport-Club Freiburg
+14./15.12.2021 ,16,Borussia Mönchengladbach,Eintracht Frankfurt
+14./15.12.2021 ,16,VfB Stuttgart,FC Bayern München
+14./15.12.2021 ,16,1. FSV Mainz 05,Hertha BSC
+14./15.12.2021 ,16,FC Augsburg,RB Leipzig
+14./15.12.2021 ,16,DSC Arminia Bielefeld,VfL Bochum
+17.-19.12.2021 ,17,FC Bayern München,VfL Wolfsburg
+17.-19.12.2021 ,17,RB Leipzig,DSC Arminia Bielefeld
+17.-19.12.2021 ,17,Eintracht Frankfurt,1. FSV Mainz 05
+17.-19.12.2021 ,17,Sport-Club Freiburg,Bayer 04 Leverkusen
+17.-19.12.2021 ,17,TSG Hoffenheim,Borussia Mönchengladbach
+17.-19.12.2021 ,17,Hertha BSC,Borussia Dortmund
+17.-19.12.2021 ,17,1. FC Köln,VfB Stuttgart
+17.-19.12.2021 ,17,VfL Bochum,1. FC Union Berlin
+17.-19.12.2021 ,17,SpVgg Greuther Fürth,FC Augsburg
+07.-09.01.2022 ,18,FC Bayern München,Borussia Mönchengladbach
+07.-09.01.2022 ,18,RB Leipzig,1. FSV Mainz 05
+07.-09.01.2022 ,18,Eintracht Frankfurt,Borussia Dortmund
+07.-09.01.2022 ,18,Bayer 04 Leverkusen,1. FC Union Berlin
+07.-09.01.2022 ,18,Sport-Club Freiburg,DSC Arminia Bielefeld
+07.-09.01.2022 ,18,TSG Hoffenheim,FC Augsburg
+07.-09.01.2022 ,18,Hertha BSC,1. FC Köln
+07.-09.01.2022 ,18,VfL Bochum,VfL Wolfsburg
+07.-09.01.2022 ,18,SpVgg Greuther Fürth,VfB Stuttgart
+14.-16.01.2022 ,19,Borussia Dortmund,Sport-Club Freiburg
+14.-16.01.2022 ,19,VfL Wolfsburg,Hertha BSC
+14.-16.01.2022 ,19,1. FC Union Berlin,TSG Hoffenheim
+14.-16.01.2022 ,19,Borussia Mönchengladbach,Bayer 04 Leverkusen
+14.-16.01.2022 ,19,VfB Stuttgart,RB Leipzig
+14.-16.01.2022 ,19,1. FSV Mainz 05,VfL Bochum
+14.-16.01.2022 ,19,FC Augsburg,Eintracht Frankfurt
+14.-16.01.2022 ,19,DSC Arminia Bielefeld,SpVgg Greuther Fürth
+14.-16.01.2022 ,19,1. FC Köln,FC Bayern München
+21.-23.01.2022 ,20,RB Leipzig,VfL Wolfsburg
+21.-23.01.2022 ,20,Eintracht Frankfurt,DSC Arminia Bielefeld
+21.-23.01.2022 ,20,Bayer 04 Leverkusen,FC Augsburg
+21.-23.01.2022 ,20,Borussia Mönchengladbach,1. FC Union Berlin
+21.-23.01.2022 ,20,Sport-Club Freiburg,VfB Stuttgart
+21.-23.01.2022 ,20,TSG Hoffenheim,Borussia Dortmund
+21.-23.01.2022 ,20,Hertha BSC,FC Bayern München
+21.-23.01.2022 ,20,VfL Bochum,1. FC Köln
+21.-23.01.2022 ,20,SpVgg Greuther Fürth,1. FSV Mainz 05
+04.-06.02.2022 ,21,FC Bayern München,RB Leipzig
+04.-06.02.2022 ,21,Borussia Dortmund,Bayer 04 Leverkusen
+04.-06.02.2022 ,21,VfL Wolfsburg,SpVgg Greuther Fürth
+04.-06.02.2022 ,21,VfB Stuttgart,Eintracht Frankfurt
+04.-06.02.2022 ,21,1. FSV Mainz 05,TSG Hoffenheim
+04.-06.02.2022 ,21,FC Augsburg,1. FC Union Berlin
+04.-06.02.2022 ,21,Hertha BSC,VfL Bochum
+04.-06.02.2022 ,21,DSC Arminia Bielefeld,Borussia Mönchengladbach
+04.-06.02.2022 ,21,1. FC Köln,Sport-Club Freiburg
+11.-13.02.2022 ,22,RB Leipzig,1. FC Köln
+11.-13.02.2022 ,22,Eintracht Frankfurt,VfL Wolfsburg
+11.-13.02.2022 ,22,Bayer 04 Leverkusen,VfB Stuttgart
+11.-13.02.2022 ,22,1. FC Union Berlin,Borussia Dortmund
+11.-13.02.2022 ,22,Borussia Mönchengladbach,FC Augsburg
+11.-13.02.2022 ,22,Sport-Club Freiburg,1. FSV Mainz 05
+11.-13.02.2022 ,22,TSG Hoffenheim,DSC Arminia Bielefeld
+11.-13.02.2022 ,22,VfL Bochum,FC Bayern München
+11.-13.02.2022 ,22,SpVgg Greuther Fürth,Hertha BSC
+18.-20.02.2022 ,23,FC Bayern München,SpVgg Greuther Fürth
+18.-20.02.2022 ,23,Borussia Dortmund,Borussia Mönchengladbach
+18.-20.02.2022 ,23,VfL Wolfsburg,TSG Hoffenheim
+18.-20.02.2022 ,23,VfB Stuttgart,VfL Bochum
+18.-20.02.2022 ,23,1. FSV Mainz 05,Bayer 04 Leverkusen
+18.-20.02.2022 ,23,FC Augsburg,Sport-Club Freiburg
+18.-20.02.2022 ,23,Hertha BSC,RB Leipzig
+18.-20.02.2022 ,23,DSC Arminia Bielefeld,1. FC Union Berlin
+18.-20.02.2022 ,23,1. FC Köln,Eintracht Frankfurt
+25.-27.02.2022 ,24,Eintracht Frankfurt,FC Bayern München
+25.-27.02.2022 ,24,Bayer 04 Leverkusen,DSC Arminia Bielefeld
+25.-27.02.2022 ,24,1. FC Union Berlin,1. FSV Mainz 05
+25.-27.02.2022 ,24,Borussia Mönchengladbach,VfL Wolfsburg
+25.-27.02.2022 ,24,Sport-Club Freiburg,Hertha BSC
+25.-27.02.2022 ,24,TSG Hoffenheim,VfB Stuttgart
+25.-27.02.2022 ,24,FC Augsburg,Borussia Dortmund
+25.-27.02.2022 ,24,VfL Bochum,RB Leipzig
+25.-27.02.2022 ,24,SpVgg Greuther Fürth,1. FC Köln
+04.-06.03.2022 ,25,FC Bayern München,Bayer 04 Leverkusen
+04.-06.03.2022 ,25,RB Leipzig,Sport-Club Freiburg
+04.-06.03.2022 ,25,VfL Wolfsburg,1. FC Union Berlin
+04.-06.03.2022 ,25,VfB Stuttgart,Borussia Mönchengladbach
+04.-06.03.2022 ,25,1. FSV Mainz 05,Borussia Dortmund
+04.-06.03.2022 ,25,Hertha BSC,Eintracht Frankfurt
+04.-06.03.2022 ,25,DSC Arminia Bielefeld,FC Augsburg
+04.-06.03.2022 ,25,1. FC Köln,TSG Hoffenheim
+04.-06.03.2022 ,25,VfL Bochum,SpVgg Greuther Fürth
+11.-13.03.2022 ,26,Borussia Dortmund,DSC Arminia Bielefeld
+11.-13.03.2022 ,26,Eintracht Frankfurt,VfL Bochum
+11.-13.03.2022 ,26,Bayer 04 Leverkusen,1. FC Köln
+11.-13.03.2022 ,26,1. FC Union Berlin,VfB Stuttgart
+11.-13.03.2022 ,26,Borussia Mönchengladbach,Hertha BSC
+11.-13.03.2022 ,26,Sport-Club Freiburg,VfL Wolfsburg
+11.-13.03.2022 ,26,TSG Hoffenheim,FC Bayern München
+11.-13.03.2022 ,26,FC Augsburg,1. FSV Mainz 05
+11.-13.03.2022 ,26,SpVgg Greuther Fürth,RB Leipzig
+18.-20.03.2022 ,27,FC Bayern München,1. FC Union Berlin
+18.-20.03.2022 ,27,RB Leipzig,Eintracht Frankfurt
+18.-20.03.2022 ,27,VfL Wolfsburg,Bayer 04 Leverkusen
+18.-20.03.2022 ,27,VfB Stuttgart,FC Augsburg
+18.-20.03.2022 ,27,1. FSV Mainz 05,DSC Arminia Bielefeld
+18.-20.03.2022 ,27,Hertha BSC,TSG Hoffenheim
+18.-20.03.2022 ,27,1. FC Köln,Borussia Dortmund
+18.-20.03.2022 ,27,VfL Bochum,Borussia Mönchengladbach
+18.-20.03.2022 ,27,SpVgg Greuther Fürth,Sport-Club Freiburg
+01.-03.04.2022 ,28,Borussia Dortmund,RB Leipzig
+01.-03.04.2022 ,28,Eintracht Frankfurt,SpVgg Greuther Fürth
+01.-03.04.2022 ,28,Bayer 04 Leverkusen,Hertha BSC
+01.-03.04.2022 ,28,1. FC Union Berlin,1. FC Köln
+01.-03.04.2022 ,28,Borussia Mönchengladbach,1. FSV Mainz 05
+01.-03.04.2022 ,28,Sport-Club Freiburg,FC Bayern München
+01.-03.04.2022 ,28,TSG Hoffenheim,VfL Bochum
+01.-03.04.2022 ,28,FC Augsburg,VfL Wolfsburg
+01.-03.04.2022 ,28,DSC Arminia Bielefeld,VfB Stuttgart
+08.-10.04.2022 ,29,FC Bayern München,FC Augsburg
+08.-10.04.2022 ,29,RB Leipzig,TSG Hoffenheim
+08.-10.04.2022 ,29,VfL Wolfsburg,DSC Arminia Bielefeld
+08.-10.04.2022 ,29,Eintracht Frankfurt,Sport-Club Freiburg
+08.-10.04.2022 ,29,VfB Stuttgart,Borussia Dortmund
+08.-10.04.2022 ,29,Hertha BSC,1. FC Union Berlin
+08.-10.04.2022 ,29,1. FC Köln,1. FSV Mainz 05
+08.-10.04.2022 ,29,VfL Bochum,Bayer 04 Leverkusen
+08.-10.04.2022 ,29,SpVgg Greuther Fürth,Borussia Mönchengladbach
+16./17.04.2022 ,30,Borussia Dortmund,VfL Wolfsburg
+16./17.04.2022 ,30,Bayer 04 Leverkusen,RB Leipzig
+16./17.04.2022 ,30,1. FC Union Berlin,Eintracht Frankfurt
+16./17.04.2022 ,30,Borussia Mönchengladbach,1. FC Köln
+16./17.04.2022 ,30,Sport-Club Freiburg,VfL Bochum
+16./17.04.2022 ,30,TSG Hoffenheim,SpVgg Greuther Fürth
+16./17.04.2022 ,30,1. FSV Mainz 05,VfB Stuttgart
+16./17.04.2022 ,30,FC Augsburg,Hertha BSC
+16./17.04.2022 ,30,DSC Arminia Bielefeld,FC Bayern München
+22.-24.04.2022 ,31,FC Bayern München,Borussia Dortmund
+22.-24.04.2022 ,31,RB Leipzig,1. FC Union Berlin
+22.-24.04.2022 ,31,VfL Wolfsburg,1. FSV Mainz 05
+22.-24.04.2022 ,31,Eintracht Frankfurt,TSG Hoffenheim
+22.-24.04.2022 ,31,Sport-Club Freiburg,Borussia Mönchengladbach
+22.-24.04.2022 ,31,Hertha BSC,VfB Stuttgart
+22.-24.04.2022 ,31,1. FC Köln,DSC Arminia Bielefeld
+22.-24.04.2022 ,31,VfL Bochum,FC Augsburg
+22.-24.04.2022 ,31,SpVgg Greuther Fürth,Bayer 04 Leverkusen
+29./30.04.2022 ,32,Borussia Dortmund,VfL Bochum
+29./30.04.2022 ,32,Bayer 04 Leverkusen,Eintracht Frankfurt
+29./30.04.2022 ,32,1. FC Union Berlin,SpVgg Greuther Fürth
+29./30.04.2022 ,32,Borussia Mönchengladbach,RB Leipzig
+29./30.04.2022 ,32,VfB Stuttgart,VfL Wolfsburg
+29./30.04.2022 ,32,TSG Hoffenheim,Sport-Club Freiburg
+29./30.04.2022 ,32,1. FSV Mainz 05,FC Bayern München
+29./30.04.2022 ,32,FC Augsburg,1. FC Köln
+29./30.04.2022 ,32,DSC Arminia Bielefeld,Hertha BSC
+06.-08.05.2022 ,33,FC Bayern München,VfB Stuttgart
+06.-08.05.2022 ,33,RB Leipzig,FC Augsburg
+06.-08.05.2022 ,33,Eintracht Frankfurt,Borussia Mönchengladbach
+06.-08.05.2022 ,33,Sport-Club Freiburg,1. FC Union Berlin
+06.-08.05.2022 ,33,TSG Hoffenheim,Bayer 04 Leverkusen
+06.-08.05.2022 ,33,Hertha BSC,1. FSV Mainz 05
+06.-08.05.2022 ,33,1. FC Köln,VfL Wolfsburg
+06.-08.05.2022 ,33,VfL Bochum,DSC Arminia Bielefeld
+06.-08.05.2022 ,33,SpVgg Greuther Fürth,Borussia Dortmund
+14/05/2022 15:30   (Sat),34,Borussia Dortmund,Hertha BSC
+14/05/2022 15:30   (Sat),34,VfL Wolfsburg,FC Bayern München
+14/05/2022 15:30   (Sat),34,Bayer 04 Leverkusen,Sport-Club Freiburg
+14/05/2022 15:30   (Sat),34,1. FC Union Berlin,VfL Bochum
+14/05/2022 15:30   (Sat),34,Borussia Mönchengladbach,TSG Hoffenheim
+14/05/2022 15:30   (Sat),34,VfB Stuttgart,1. FC Köln
+14/05/2022 15:30   (Sat),34,1. FSV Mainz 05,Eintracht Frankfurt
+14/05/2022 15:30   (Sat),34,FC Augsburg,SpVgg Greuther Fürth
+14/05/2022 15:30   (Sat),34,DSC Arminia Bielefeld,RB Leipzig

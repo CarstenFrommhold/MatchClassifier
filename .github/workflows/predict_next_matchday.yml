@@ -1,0 +1,17 @@
+name: predict next matchday
+
+on:
+ workflow_dispatch:
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+       token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Say hello and run python
+      run: |-
+        echo "Hey!"
+        pip install -r "requirements.txt"
+        python3 current_season/predict_next_matchday.py
