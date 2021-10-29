@@ -1,5 +1,6 @@
 import pandas as pd
 from baseline import DecisionTreeModel, Random, Simple
+import joblib
 
 if __name__ == "__main__":
 
@@ -18,4 +19,5 @@ if __name__ == "__main__":
     model.train()
     model.evaluate()
     print(model.accuracy, model.precision, model.auc)
+    joblib.dump(model.tree, "model.p")
 

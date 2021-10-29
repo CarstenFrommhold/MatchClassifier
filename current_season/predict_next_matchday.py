@@ -6,7 +6,9 @@ import os
 import sys
 sys.path.append("../training/data_prep")
 import data_prep
-from typing import List, Dict
+from typing import List, Dict, Tuple
+import joblib
+import math
 
 
 matchplan_path = "data/matchplan_2122.csv"
@@ -45,6 +47,52 @@ def map_names(from_: List[str], to: List[str]) -> Dict:
     return map
 
 
+def reciprocal_value(x: float) -> float:
+    if x == 0:
+        return 99
+    else:
+        return 1/x
+
+
+def create_twitter_messages(df_predictions: pd.DataFrame, matchday: int) -> Tuple[str, str]:
+
+    abbreviations: Dict = {
+        "Freiburg": "FRE",
+        "Greuther Furth": "FUE",
+        "Hoffenheim": "HOF",
+        "Hertha": "BSC",
+        "M'gladbach": "BMG",
+        "Bochum": "VFL",
+        "Augsburg": "AUG",
+        "Stuttgart": "STU",
+        "Leverkusen": "LEV",
+        "Wolfsburg": "WOB",
+        "Ein Frankfurt": "FRA",
+        "RB Leipzig": "RBL",
+        "Dortmund": "BVB",
+        "FC Koln": "FCK",
+        "Union Berlin": "FCU",
+        "Bayern Munich": "BAY",
+        "Bielefeld": "BIE",
+        "Mainz": "MAI"
+    }
+
+    df_predictions = df_predictions.replace(abbreviations)
+    message_1 = f"(1/2) Odds for next weekend, matchday {matchday}."
+    message_2 = f"(2/2) Odds for next weekend, matchday {matchday}."
+
+    for match in df_predictions.iterrows():
+        match_no, entries = match
+        str_ = entries["HomeTeam"] + "-" + entries["AwayTeam"] + " " + str(entries["1"]) + " | " \
+        + str(entries["2"]) + " | " + str(entries["X"])
+        if match_no <= 4:
+            message_1 = message_1 + "\r\n" + str_
+        else:
+            message_2 = message_2 + "\r\n" + str_
+
+    return message_1, message_2
+
+
 if __name__ == "__main__":
 
     # update_current_season()
@@ -68,9 +116,17 @@ if __name__ == "__main__":
     df_next_matchday["FTHG"] = 9999
 
     data = pd.concat([df_matches_played, df_next_matchday]).reset_index().drop("index", axis=1)
-    data = data_prep.main(data, full_season=False, table_output_path="sanity_table.csv")
+    data = data_prep.main(data, full_season=False)
 
     keep = ["Matchday", "HomeTeam", "AwayTeam"] + features
-    df_prediction_input = data.loc[data.Matchday == next_matchday, keep]
-    print(df_prediction_input)
-
+    df_prediction_input = data.loc[data.Matchday == next_matchday, keep].reset_index().drop("index", axis=1)
+    model = joblib.load("../training/models/model.p")
+    predictions = model.predict_proba(df_prediction_input[features])
+    df_odds = pd.DataFrame(predictions, columns=["1", "2", "X"])
+    for result in ["1", "2", "X"]:
+        df_odds[result] = df_odds[result].apply(lambda x: round(reciprocal_value(x), 2))
+        df_odds[result] = df_odds[result].apply(lambda x: min(x, 20))
+    df_predictions = df_prediction_input[["HomeTeam", "AwayTeam"]].join(df_odds)
+    message_1, message_2 = create_twitter_messages(df_predictions, int(next_matchday))
+    print(message_1)
+    print(message_2)
