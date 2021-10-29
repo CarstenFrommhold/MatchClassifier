@@ -13,6 +13,6 @@ jobs:
     - name: Say hello, install package and predict next matchday
       run: |-
         echo "Hey!"
-        python3 setup.py install
+        sudo python3 setup.py install
         cd sandbox
         python3 predict_next_matchday.py
