@@ -66,7 +66,7 @@ def create_twitter_messages(df_predictions: pd.DataFrame, matchday: int) -> Tupl
     for match in df_predictions.iterrows():
         match_no, entries = match
         str_ = entries["HomeTeam"] + "-" + entries["AwayTeam"] + " " + str(entries["1"]) + " | " \
-        + str(entries["2"]) + " | " + str(entries["X"])
+        + str(entries["X"]) + " | " + str(entries["2"])
         if match_no <= 4:
             message_1 = message_1 + "\r\n" + str_
         else:
@@ -113,3 +113,7 @@ if __name__ == "__main__":
     message_1, message_2 = create_twitter_messages(df_predictions, int(next_matchday))
     print(message_1)
     print(message_2)
+    with open("twitter_message_1.txt", "w") as file:
+        file.write(message_1)
+    with open("twitter_message_2.txt", "w") as file:
+        file.write(message_2)

@@ -257,6 +257,8 @@ class SanityError(Exception):
 
 
 def top_n_player_skills(df: pd.DataFrame, season: int, league_name: str = 'German 1. Bundesliga', top_n: int = 15) -> pd.DataFrame:
+    """ Calculates the average skill-set of TopN players
+    """
 
     df = df.loc[df.league_name == league_name,
                 ["long_name", "club_name", "overall"]]

@@ -66,13 +66,17 @@ class Simple(Baseline):
 
 class DecisionTreeModel(Baseline):
 
-    def __init__(self, *args, max_depth: int, **kwargs):
+    def __init__(self, *args, max_depth: int, min_samples_leaf: float, **kwargs):
         super().__init__(*args, **kwargs)
         self.max_depth = max_depth
-        self.tree = DecisionTreeClassifier(max_depth=self.max_depth)
+        self.min_samples_leaf = min_samples_leaf
+        self.tree = DecisionTreeClassifier(max_depth=self.max_depth, min_samples_leaf=self.min_samples_leaf)
 
     def fit(self, X, y):
         self.tree.fit(self.x_train, self.y_train)
+
+    def final_fit(self):
+        self.tree.fit(self.data[self.features], self.data[self.target])
 
     def predict(self, X):
         return self.tree.predict(X)

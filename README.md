@@ -32,7 +32,10 @@ Note that there exist some solutions to scrap sofifa.com, just a google search a
 
 ### Current model
 
-lorem ipsum
+To start, a simple decicion tree classfier is chosen. Note that no model competition, feature selection and hyperparameter tuning is done yet. Modelling steps done so far have been just by eye to get a first idea. 
+The next step would be to use a specific framework to do that. 
+
+But this already contained an interesting learning: A minimum sample leaf of 0.03 was needes to get a plausible odd for the match between Union Berlin and Bayern Munich at matchday 10: A minimal sample leaf results in odds of 2.4 | 4.0 | 3.0 to whereas a minimum of 0.03 (=55 observations) leads to odds of 11.6 | 9.67 | 1.23. The favorite won 5:2.
 
 ### Benchmark
 
@@ -53,14 +56,19 @@ One observes a soothing result: These values are not outstanding.
 
 ## Next steps
 
+* Search for a better model.
 * Resolve cold start problem for the first matchdays.
+* Adjust prepare season 19/20 -> solve covid issues. 
 
 ### Feature Ideas
 
 * clubs master data like members, age, stadium capacity -> create embeddings
 * last match between two teams (one can find [here](http://www.bulibox.de/downloads/download.html), for example)
+* calculate skills based on actual first 11 players (look for data!)
+* use specific fifa offensive & defensive skills 
+
 
 ## Notes
 
 * Home advantage is implicit in the modeling because the variables are set sensitive to home and away position.
-* Explicit modelling to get an insight of feature importance?
+* It would be interesting to explicitly model it to get an insight of feature importance.
