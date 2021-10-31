@@ -77,11 +77,12 @@ def create_twitter_messages(df_predictions: pd.DataFrame, matchday: int) -> Tupl
 
 if __name__ == "__main__":
 
-    update_current_season()
+    # pdate_current_season()
     df_matchplan = pd.read_csv(matchplan_path)
     df_matchplan = rename(df_matchplan)
 
     df_matches_played = pd.read_csv("../data/current_season/s_2122.csv")
+    df_players = pd.read_csv("../data/players/players_22.csv")
 
     n_matches_played = len(df_matches_played)
     if n_matches_played % 9 != 0:
@@ -98,7 +99,7 @@ if __name__ == "__main__":
     df_next_matchday["FTHG"] = 9999
 
     data = pd.concat([df_matches_played, df_next_matchday]).reset_index().drop("index", axis=1)
-    data = data_prep.main(data, full_season=False)
+    data = data_prep.main(data, df_players, season=2122, full_season=False)
 
     keep = ["Matchday", "HomeTeam", "AwayTeam"] + FEATURES
     df_prediction_input = data.loc[data.Matchday == next_matchday, keep].reset_index().drop("index", axis=1)

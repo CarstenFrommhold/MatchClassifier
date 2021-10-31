@@ -1,11 +1,40 @@
 # MatchClassifier
 
+- [MatchClassifier](#matchclassifier)
+  * [Data](#data)
+  * [Model](#model)
+    + [Current model](#current-model)
+    + [Benchmark](#benchmark)
+  * [Next steps](#next-steps)
+    + [Feature Ideas](#feature-ideas)
+  * [Notes](#notes)
+
 This repo aims to predict odds of football matches for the german bundesliga.
 Note that, at the moment, it acts as a playground to do some first steps.
 To start, match outcomes should be predicted. #goals and other kpi are note taken into account so far. 
 A match has three potential outcomes. The home team wins (general marked with "1"), the away team wins ("2") or a draft ("X").
 
-## Benchmark
+## Data
+
+### Matches
+
+Match result taken from [here](https://www.football-data.co.uk/).  
+It will be worthy to take a look at [open data repo](https://github.com/statsbomb/open-data)
+
+### Fifa Player Skills
+
+* season 15-21 taken from [here](https://www.kaggle.com/stefanoleone992/fifa-21-complete-player-dataset)
+* season 22 taken from [here](https://www.kaggle.com/cashncarry/fifa-22-complete-player-dataset)
+
+Note that there exist some solutions to scrap sofifa.com, just a google search away. 
+
+## Model
+
+### Current model
+
+lorem ipsum
+
+### Benchmark
 
 Newer seasons contain B365 odd data which one can use to create some benchmark metrics.
 Note that the calculation of metrics given those odds leads to a little bias. 
@@ -22,7 +51,7 @@ Season | Accuracy | Precision |  AUC
 
 One observes a soothing result: These values are not outstanding.
 
-## Development
+## Next steps
 
 * Resolve cold start problem for the first matchdays.
 
