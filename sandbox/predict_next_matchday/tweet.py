@@ -1,14 +1,22 @@
 """ Twitter API
 """
 import tweepy
-from credentials import (
-    consumer_key,
-    consumer_secret,
-    access_token,
-    access_token_secret
-)
+import argparse
+
+ap = argparse.ArgumentParser()
+ap.add_argument("-ck", "--consumer_key", required=True, help="consumer_key")
+ap.add_argument("-cs", "--consumer_secret", required=True, help="consumer_secret")
+ap.add_argument("-at", "--access_token", required=True, help="access_token")
+ap.add_argument("-ats", "--access_token_secret", required=True, help="access_token_secret")
+args = vars(ap.parse_args())
+
 
 if __name__ == "__main__":
+
+    consumer_key = args["consumer_key"]
+    consumer_secret = args["consumer_secret"]
+    access_token = args["access_token"]
+    access_token_secret = args["access_token_secret"]
 
     auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
     auth.set_access_token(access_token, access_token_secret)

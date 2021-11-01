@@ -1,0 +1,21 @@
+name: tweet odds on change
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+    - 'sandbox/predict_next_matchday/twitter_message_1.txt'
+
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+       token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Tweet the newest twitter message
+      run: |-
+        cd sandbox/predict_next_matchday
+        pip install -r "requirements.txt"
+        python3 tweet.py -ck ${{ secrets.CONSUMER_KEY }} -cs ${{ secrets.CONSUMER_SECRET }} -at ${{ secrets.ACCESS_TOKEN }} -ats ${{ secrets.ACCESS_TOKEN_SECRET }}

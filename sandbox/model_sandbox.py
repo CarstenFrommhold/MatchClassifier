@@ -20,5 +20,5 @@ if __name__ == "__main__":
     print(model.accuracy, model.precision, model.auc)
 
     model.final_fit()
-    joblib.dump(model.tree, "model.p")
+    joblib.dump(model.tree, "model/model.p")
 

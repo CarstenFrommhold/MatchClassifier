@@ -7,7 +7,7 @@ import joblib
 from match_classifier.utils import map_names
 from match_classifier.config import FEATURES
 
-matchplan_path = "../data/current_season/matchplan_2122.csv"
+matchplan_path = "../../data/current_season/matchplan_2122.csv"
 
 
 def update_current_season():
@@ -15,7 +15,7 @@ def update_current_season():
     matches = f'https://www.football-data.co.uk/mmz4281/2122/D1.csv'
     os.system(f"echo download {matches}")
     os.system(f"wget {matches} ")
-    os.system(f"mv D1.csv ../data/current_season/s_2122.csv")
+    os.system(f"mv D1.csv ../../data/current_season/s_2122.csv")
 
 
 def rename(df):
@@ -81,8 +81,8 @@ if __name__ == "__main__":
     df_matchplan = pd.read_csv(matchplan_path)
     df_matchplan = rename(df_matchplan)
 
-    df_matches_played = pd.read_csv("../data/current_season/s_2122.csv")
-    df_players = pd.read_csv("../data/players/players_22.csv")
+    df_matches_played = pd.read_csv("../../data/current_season/s_2122.csv")
+    df_players = pd.read_csv("../../data/players/players_22.csv")
 
     n_matches_played = len(df_matches_played)
     if n_matches_played % 9 != 0:
@@ -103,7 +103,7 @@ if __name__ == "__main__":
 
     keep = ["Matchday", "HomeTeam", "AwayTeam"] + FEATURES
     df_prediction_input = data.loc[data.Matchday == next_matchday, keep].reset_index().drop("index", axis=1)
-    model = joblib.load("model.p")
+    model = joblib.load("../model/model.p")
     predictions = model.predict_proba(df_prediction_input[FEATURES])
     df_odds = pd.DataFrame(predictions, columns=["1", "2", "X"])
     for result in ["1", "2", "X"]:
