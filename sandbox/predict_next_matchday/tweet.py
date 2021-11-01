@@ -2,6 +2,7 @@
 """
 import tweepy
 import argparse
+import time
 
 ap = argparse.ArgumentParser()
 ap.add_argument("-ck", "--consumer_key", required=True, help="consumer_key")
@@ -33,4 +34,5 @@ if __name__ == "__main__":
     print(message_2)
 
     api.update_status(message_1)
+    time.sleep(10)
     api.update_status(message_2)
