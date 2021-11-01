@@ -34,5 +34,5 @@ if __name__ == "__main__":
     print(message_2)
 
     api.update_status(message_1)
-    time.sleep(10)
+    time.sleep(5)
     api.update_status(message_2)
