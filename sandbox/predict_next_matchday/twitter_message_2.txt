@@ -1,6 +1,5 @@
-(2/2) Odds for next weekend, matchday 10.
-FRA-RBL 3.5 | 4.25 | 2.09
-BVB-FCK 1.36 | 4.78 | 17.36
-FCU-BAY 11.6 | 9.67 | 1.23
-BIE-MAI 2.5 | 3.57 | 3.13
----TEST---
+(2/2) Odds for next weekend, matchday 11.
+RBL-BVB 3.5 | 4.25 | 2.09
+BAY-FRE 1.36 | 4.78 | 17.36
+STU-BIE 2.23 | 3.83 | 3.45
+FUE-FRA 2.5 | 3.57 | 3.13
