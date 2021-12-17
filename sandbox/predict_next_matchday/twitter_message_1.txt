@@ -1,6 +1,6 @@
-(1/2) Odds for next weekend, matchday 16.
-STU-BAY 11.6 | 9.67 | 1.23
-MAI-BSC 2.5 | 3.57 | 3.13
-BMG-FRA 2.23 | 3.83 | 3.45
-AUG-RBL 3.5 | 4.25 | 2.09
-LEV-HOF 1.79 | 3.93 | 5.36
+(1/2) Odds for next weekend, matchday 17.
+FCK-STU 2.5 | 3.57 | 3.13
+BSC-BVB 3.5 | 4.25 | 2.09
+HOF-BMG 2.5 | 3.57 | 3.13
+VFL-FCU 2.5 | 3.57 | 3.13
+FRA-MAI 1.79 | 4.06 | 5.15
