@@ -24,7 +24,7 @@ def sum_(a, b, c):
 
 if __name__ == "__main__":
 
-    season = 2021
+    season = 2122
 
     df = pd.read_csv(f"../data/matches/s_{season}.csv")
     df = df.rename({

@@ -1,0 +1,307 @@
+Datum,Spieltag,Heimmannschaft,Gastmannschaft
+05.08.2022 20:30   (Fr),1,Eintracht Frankfurt,FC Bayern München
+06./07.08.2022 ,1,Borussia Dortmund,Bayer 04 Leverkusen
+06./07.08.2022 ,1,1. FC Union Berlin,Hertha BSC
+06./07.08.2022 ,1,1. FC Köln,FC Schalke 04
+06./07.08.2022 ,1,Borussia Mönchengladbach,TSG Hoffenheim
+06./07.08.2022 ,1,VfL Wolfsburg,SV Werder Bremen
+06./07.08.2022 ,1,VfL Bochum 1848,1. FSV Mainz 05
+06./07.08.2022 ,1,FC Augsburg,Sport-Club Freiburg
+06./07.08.2022 ,1,VfB Stuttgart,RB Leipzig
+12.-14.08.2022 ,2,FC Bayern München,VfL Wolfsburg
+12.-14.08.2022 ,2,Bayer 04 Leverkusen,FC Augsburg
+12.-14.08.2022 ,2,RB Leipzig,1. FC Köln
+12.-14.08.2022 ,2,Sport-Club Freiburg,Borussia Dortmund
+12.-14.08.2022 ,2,1. FSV Mainz 05,1. FC Union Berlin
+12.-14.08.2022 ,2,TSG Hoffenheim,VfL Bochum 1848
+12.-14.08.2022 ,2,Hertha BSC,Eintracht Frankfurt
+12.-14.08.2022 ,2,FC Schalke 04,Borussia Mönchengladbach
+12.-14.08.2022 ,2,SV Werder Bremen,VfB Stuttgart
+19.-21.08.2022 ,3,Borussia Dortmund,SV Werder Bremen
+19.-21.08.2022 ,3,Bayer 04 Leverkusen,TSG Hoffenheim
+19.-21.08.2022 ,3,1. FC Union Berlin,RB Leipzig
+19.-21.08.2022 ,3,Borussia Mönchengladbach,Hertha BSC
+19.-21.08.2022 ,3,Eintracht Frankfurt,1. FC Köln
+19.-21.08.2022 ,3,VfL Wolfsburg,FC Schalke 04
+19.-21.08.2022 ,3,VfL Bochum 1848,FC Bayern München
+19.-21.08.2022 ,3,FC Augsburg,1. FSV Mainz 05
+19.-21.08.2022 ,3,VfB Stuttgart,Sport-Club Freiburg
+26.-28.08.2022 ,4,FC Bayern München,Borussia Mönchengladbach
+26.-28.08.2022 ,4,RB Leipzig,VfL Wolfsburg
+26.-28.08.2022 ,4,Sport-Club Freiburg,VfL Bochum 1848
+26.-28.08.2022 ,4,1. FC Köln,VfB Stuttgart
+26.-28.08.2022 ,4,1. FSV Mainz 05,Bayer 04 Leverkusen
+26.-28.08.2022 ,4,TSG Hoffenheim,FC Augsburg
+26.-28.08.2022 ,4,Hertha BSC,Borussia Dortmund
+26.-28.08.2022 ,4,FC Schalke 04,1. FC Union Berlin
+26.-28.08.2022 ,4,SV Werder Bremen,Eintracht Frankfurt
+02.-04.09.2022 ,5,Borussia Dortmund,TSG Hoffenheim
+02.-04.09.2022 ,5,Bayer 04 Leverkusen,Sport-Club Freiburg
+02.-04.09.2022 ,5,1. FC Union Berlin,FC Bayern München
+02.-04.09.2022 ,5,Borussia Mönchengladbach,1. FSV Mainz 05
+02.-04.09.2022 ,5,Eintracht Frankfurt,RB Leipzig
+02.-04.09.2022 ,5,VfL Wolfsburg,1. FC Köln
+02.-04.09.2022 ,5,VfL Bochum 1848,SV Werder Bremen
+02.-04.09.2022 ,5,FC Augsburg,Hertha BSC
+02.-04.09.2022 ,5,VfB Stuttgart,FC Schalke 04
+09.-11.09.2022 ,6,FC Bayern München,VfB Stuttgart
+09.-11.09.2022 ,6,RB Leipzig,Borussia Dortmund
+09.-11.09.2022 ,6,Sport-Club Freiburg,Borussia Mönchengladbach
+09.-11.09.2022 ,6,1. FC Köln,1. FC Union Berlin
+09.-11.09.2022 ,6,TSG Hoffenheim,1. FSV Mainz 05
+09.-11.09.2022 ,6,Eintracht Frankfurt,VfL Wolfsburg
+09.-11.09.2022 ,6,Hertha BSC,Bayer 04 Leverkusen
+09.-11.09.2022 ,6,FC Schalke 04,VfL Bochum 1848
+09.-11.09.2022 ,6,SV Werder Bremen,FC Augsburg
+16.-18.09.2022 ,7,Borussia Dortmund,FC Schalke 04
+16.-18.09.2022 ,7,Bayer 04 Leverkusen,SV Werder Bremen
+16.-18.09.2022 ,7,1. FC Union Berlin,VfL Wolfsburg
+16.-18.09.2022 ,7,1. FSV Mainz 05,Hertha BSC
+16.-18.09.2022 ,7,TSG Hoffenheim,Sport-Club Freiburg
+16.-18.09.2022 ,7,Borussia Mönchengladbach,RB Leipzig
+16.-18.09.2022 ,7,VfL Bochum 1848,1. FC Köln
+16.-18.09.2022 ,7,FC Augsburg,FC Bayern München
+16.-18.09.2022 ,7,VfB Stuttgart,Eintracht Frankfurt
+30.09.-02.10.2022 ,8,FC Bayern München,Bayer 04 Leverkusen
+30.09.-02.10.2022 ,8,RB Leipzig,VfL Bochum 1848
+30.09.-02.10.2022 ,8,Sport-Club Freiburg,1. FSV Mainz 05
+30.09.-02.10.2022 ,8,1. FC Köln,Borussia Dortmund
+30.09.-02.10.2022 ,8,Eintracht Frankfurt,1. FC Union Berlin
+30.09.-02.10.2022 ,8,VfL Wolfsburg,VfB Stuttgart
+30.09.-02.10.2022 ,8,Hertha BSC,TSG Hoffenheim
+30.09.-02.10.2022 ,8,FC Schalke 04,FC Augsburg
+30.09.-02.10.2022 ,8,SV Werder Bremen,Borussia Mönchengladbach
+07.-09.10.2022 ,9,Borussia Dortmund,FC Bayern München
+07.-09.10.2022 ,9,Bayer 04 Leverkusen,FC Schalke 04
+07.-09.10.2022 ,9,1. FSV Mainz 05,RB Leipzig
+07.-09.10.2022 ,9,TSG Hoffenheim,SV Werder Bremen
+07.-09.10.2022 ,9,Borussia Mönchengladbach,1. FC Köln
+07.-09.10.2022 ,9,VfL Bochum 1848,Eintracht Frankfurt
+07.-09.10.2022 ,9,FC Augsburg,VfL Wolfsburg
+07.-09.10.2022 ,9,VfB Stuttgart,1. FC Union Berlin
+07.-09.10.2022 ,9,Hertha BSC,Sport-Club Freiburg
+14.-16.10.2022 ,10,FC Bayern München,Sport-Club Freiburg
+14.-16.10.2022 ,10,RB Leipzig,Hertha BSC
+14.-16.10.2022 ,10,1. FC Union Berlin,Borussia Dortmund
+14.-16.10.2022 ,10,1. FC Köln,FC Augsburg
+14.-16.10.2022 ,10,Eintracht Frankfurt,Bayer 04 Leverkusen
+14.-16.10.2022 ,10,VfL Wolfsburg,Borussia Mönchengladbach
+14.-16.10.2022 ,10,VfB Stuttgart,VfL Bochum 1848
+14.-16.10.2022 ,10,FC Schalke 04,TSG Hoffenheim
+14.-16.10.2022 ,10,SV Werder Bremen,1. FSV Mainz 05
+21.-23.10.2022 ,11,Borussia Dortmund,VfB Stuttgart
+21.-23.10.2022 ,11,Bayer 04 Leverkusen,VfL Wolfsburg
+21.-23.10.2022 ,11,Sport-Club Freiburg,SV Werder Bremen
+21.-23.10.2022 ,11,1. FSV Mainz 05,1. FC Köln
+21.-23.10.2022 ,11,TSG Hoffenheim,FC Bayern München
+21.-23.10.2022 ,11,Borussia Mönchengladbach,Eintracht Frankfurt
+21.-23.10.2022 ,11,VfL Bochum 1848,1. FC Union Berlin
+21.-23.10.2022 ,11,FC Augsburg,RB Leipzig
+21.-23.10.2022 ,11,Hertha BSC,FC Schalke 04
+28.-30.10.2022 ,12,FC Bayern München,1. FSV Mainz 05
+28.-30.10.2022 ,12,RB Leipzig,Bayer 04 Leverkusen
+28.-30.10.2022 ,12,1. FC Union Berlin,Borussia Mönchengladbach
+28.-30.10.2022 ,12,1. FC Köln,TSG Hoffenheim
+28.-30.10.2022 ,12,Eintracht Frankfurt,Borussia Dortmund
+28.-30.10.2022 ,12,VfL Wolfsburg,VfL Bochum 1848
+28.-30.10.2022 ,12,VfB Stuttgart,FC Augsburg
+28.-30.10.2022 ,12,FC Schalke 04,Sport-Club Freiburg
+28.-30.10.2022 ,12,SV Werder Bremen,Hertha BSC
+04.-06.11.2022 ,13,Borussia Dortmund,VfL Bochum 1848
+04.-06.11.2022 ,13,Bayer 04 Leverkusen,1. FC Union Berlin
+04.-06.11.2022 ,13,Sport-Club Freiburg,1. FC Köln
+04.-06.11.2022 ,13,1. FSV Mainz 05,VfL Wolfsburg
+04.-06.11.2022 ,13,TSG Hoffenheim,RB Leipzig
+04.-06.11.2022 ,13,Borussia Mönchengladbach,VfB Stuttgart
+04.-06.11.2022 ,13,FC Augsburg,Eintracht Frankfurt
+04.-06.11.2022 ,13,Hertha BSC,FC Bayern München
+04.-06.11.2022 ,13,SV Werder Bremen,FC Schalke 04
+08./09.11.2022 ,14,FC Bayern München,SV Werder Bremen
+08./09.11.2022 ,14,RB Leipzig,Sport-Club Freiburg
+08./09.11.2022 ,14,1. FC Union Berlin,FC Augsburg
+08./09.11.2022 ,14,1. FC Köln,Bayer 04 Leverkusen
+08./09.11.2022 ,14,Eintracht Frankfurt,TSG Hoffenheim
+08./09.11.2022 ,14,VfL Wolfsburg,Borussia Dortmund
+08./09.11.2022 ,14,VfL Bochum 1848,Borussia Mönchengladbach
+08./09.11.2022 ,14,VfB Stuttgart,Hertha BSC
+08./09.11.2022 ,14,FC Schalke 04,1. FSV Mainz 05
+11.-13.11.2022 ,15,Bayer 04 Leverkusen,VfB Stuttgart
+11.-13.11.2022 ,15,Sport-Club Freiburg,1. FC Union Berlin
+11.-13.11.2022 ,15,1. FSV Mainz 05,Eintracht Frankfurt
+11.-13.11.2022 ,15,TSG Hoffenheim,VfL Wolfsburg
+11.-13.11.2022 ,15,Borussia Mönchengladbach,Borussia Dortmund
+11.-13.11.2022 ,15,FC Augsburg,VfL Bochum 1848
+11.-13.11.2022 ,15,Hertha BSC,1. FC Köln
+11.-13.11.2022 ,15,FC Schalke 04,FC Bayern München
+11.-13.11.2022 ,15,SV Werder Bremen,RB Leipzig
+20.-22.01.2023 ,16,Borussia Dortmund,FC Augsburg
+20.-22.01.2023 ,16,RB Leipzig,FC Bayern München
+20.-22.01.2023 ,16,1. FC Union Berlin,TSG Hoffenheim
+20.-22.01.2023 ,16,1. FC Köln,SV Werder Bremen
+20.-22.01.2023 ,16,Borussia Mönchengladbach,Bayer 04 Leverkusen
+20.-22.01.2023 ,16,Eintracht Frankfurt,FC Schalke 04
+20.-22.01.2023 ,16,VfL Wolfsburg,Sport-Club Freiburg
+20.-22.01.2023 ,16,VfL Bochum 1848,Hertha BSC
+20.-22.01.2023 ,16,VfB Stuttgart,1. FSV Mainz 05
+24./25.01.2023 ,17,FC Bayern München,1. FC Köln
+24./25.01.2023 ,17,Bayer 04 Leverkusen,VfL Bochum 1848
+24./25.01.2023 ,17,Sport-Club Freiburg,Eintracht Frankfurt
+24./25.01.2023 ,17,1. FSV Mainz 05,Borussia Dortmund
+24./25.01.2023 ,17,TSG Hoffenheim,VfB Stuttgart
+24./25.01.2023 ,17,FC Augsburg,Borussia Mönchengladbach
+24./25.01.2023 ,17,Hertha BSC,VfL Wolfsburg
+24./25.01.2023 ,17,FC Schalke 04,RB Leipzig
+24./25.01.2023 ,17,SV Werder Bremen,1. FC Union Berlin
+27.-29.01.2023 ,18,FC Bayern München,Eintracht Frankfurt
+27.-29.01.2023 ,18,Bayer 04 Leverkusen,Borussia Dortmund
+27.-29.01.2023 ,18,RB Leipzig,VfB Stuttgart
+27.-29.01.2023 ,18,Sport-Club Freiburg,FC Augsburg
+27.-29.01.2023 ,18,1. FSV Mainz 05,VfL Bochum 1848
+27.-29.01.2023 ,18,TSG Hoffenheim,Borussia Mönchengladbach
+27.-29.01.2023 ,18,Hertha BSC,1. FC Union Berlin
+27.-29.01.2023 ,18,FC Schalke 04,1. FC Köln
+27.-29.01.2023 ,18,SV Werder Bremen,VfL Wolfsburg
+03.-05.02.2023 ,19,Borussia Dortmund,Sport-Club Freiburg
+03.-05.02.2023 ,19,1. FC Union Berlin,1. FSV Mainz 05
+03.-05.02.2023 ,19,1. FC Köln,RB Leipzig
+03.-05.02.2023 ,19,Borussia Mönchengladbach,FC Schalke 04
+03.-05.02.2023 ,19,Eintracht Frankfurt,Hertha BSC
+03.-05.02.2023 ,19,VfL Wolfsburg,FC Bayern München
+03.-05.02.2023 ,19,VfL Bochum 1848,TSG Hoffenheim
+03.-05.02.2023 ,19,FC Augsburg,Bayer 04 Leverkusen
+03.-05.02.2023 ,19,VfB Stuttgart,SV Werder Bremen
+10.-12.02.2023 ,20,FC Bayern München,VfL Bochum 1848
+10.-12.02.2023 ,20,RB Leipzig,1. FC Union Berlin
+10.-12.02.2023 ,20,Sport-Club Freiburg,VfB Stuttgart
+10.-12.02.2023 ,20,1. FC Köln,Eintracht Frankfurt
+10.-12.02.2023 ,20,1. FSV Mainz 05,FC Augsburg
+10.-12.02.2023 ,20,TSG Hoffenheim,Bayer 04 Leverkusen
+10.-12.02.2023 ,20,Hertha BSC,Borussia Mönchengladbach
+10.-12.02.2023 ,20,FC Schalke 04,VfL Wolfsburg
+10.-12.02.2023 ,20,SV Werder Bremen,Borussia Dortmund
+17.-19.02.2023 ,21,Borussia Dortmund,Hertha BSC
+17.-19.02.2023 ,21,Bayer 04 Leverkusen,1. FSV Mainz 05
+17.-19.02.2023 ,21,1. FC Union Berlin,FC Schalke 04
+17.-19.02.2023 ,21,Borussia Mönchengladbach,FC Bayern München
+17.-19.02.2023 ,21,Eintracht Frankfurt,SV Werder Bremen
+17.-19.02.2023 ,21,VfL Wolfsburg,RB Leipzig
+17.-19.02.2023 ,21,VfL Bochum 1848,Sport-Club Freiburg
+17.-19.02.2023 ,21,FC Augsburg,TSG Hoffenheim
+17.-19.02.2023 ,21,VfB Stuttgart,1. FC Köln
+24.-26.02.2023 ,22,FC Bayern München,1. FC Union Berlin
+24.-26.02.2023 ,22,RB Leipzig,Eintracht Frankfurt
+24.-26.02.2023 ,22,Sport-Club Freiburg,Bayer 04 Leverkusen
+24.-26.02.2023 ,22,1. FC Köln,VfL Wolfsburg
+24.-26.02.2023 ,22,1. FSV Mainz 05,Borussia Mönchengladbach
+24.-26.02.2023 ,22,TSG Hoffenheim,Borussia Dortmund
+24.-26.02.2023 ,22,Hertha BSC,FC Augsburg
+24.-26.02.2023 ,22,FC Schalke 04,VfB Stuttgart
+24.-26.02.2023 ,22,SV Werder Bremen,VfL Bochum 1848
+03.-05.03.2023 ,23,Borussia Dortmund,RB Leipzig
+03.-05.03.2023 ,23,Bayer 04 Leverkusen,Hertha BSC
+03.-05.03.2023 ,23,1. FC Union Berlin,1. FC Köln
+03.-05.03.2023 ,23,1. FSV Mainz 05,TSG Hoffenheim
+03.-05.03.2023 ,23,Borussia Mönchengladbach,Sport-Club Freiburg
+03.-05.03.2023 ,23,VfL Wolfsburg,Eintracht Frankfurt
+03.-05.03.2023 ,23,VfL Bochum 1848,FC Schalke 04
+03.-05.03.2023 ,23,FC Augsburg,SV Werder Bremen
+03.-05.03.2023 ,23,VfB Stuttgart,FC Bayern München
+10.-12.03.2023 ,24,FC Bayern München,FC Augsburg
+10.-12.03.2023 ,24,RB Leipzig,Borussia Mönchengladbach
+10.-12.03.2023 ,24,Sport-Club Freiburg,TSG Hoffenheim
+10.-12.03.2023 ,24,1. FC Köln,VfL Bochum 1848
+10.-12.03.2023 ,24,Eintracht Frankfurt,VfB Stuttgart
+10.-12.03.2023 ,24,VfL Wolfsburg,1. FC Union Berlin
+10.-12.03.2023 ,24,Hertha BSC,1. FSV Mainz 05
+10.-12.03.2023 ,24,FC Schalke 04,Borussia Dortmund
+10.-12.03.2023 ,24,SV Werder Bremen,Bayer 04 Leverkusen
+17.-19.03.2023 ,25,Borussia Dortmund,1. FC Köln
+17.-19.03.2023 ,25,Bayer 04 Leverkusen,FC Bayern München
+17.-19.03.2023 ,25,1. FC Union Berlin,Eintracht Frankfurt
+17.-19.03.2023 ,25,1. FSV Mainz 05,Sport-Club Freiburg
+17.-19.03.2023 ,25,TSG Hoffenheim,Hertha BSC
+17.-19.03.2023 ,25,Borussia Mönchengladbach,SV Werder Bremen
+17.-19.03.2023 ,25,VfL Bochum 1848,RB Leipzig
+17.-19.03.2023 ,25,FC Augsburg,FC Schalke 04
+17.-19.03.2023 ,25,VfB Stuttgart,VfL Wolfsburg
+31.03.-02.04.2023 ,26,FC Bayern München,Borussia Dortmund
+31.03.-02.04.2023 ,26,RB Leipzig,1. FSV Mainz 05
+31.03.-02.04.2023 ,26,1. FC Union Berlin,VfB Stuttgart
+31.03.-02.04.2023 ,26,Sport-Club Freiburg,Hertha BSC
+31.03.-02.04.2023 ,26,1. FC Köln,Borussia Mönchengladbach
+31.03.-02.04.2023 ,26,Eintracht Frankfurt,VfL Bochum 1848
+31.03.-02.04.2023 ,26,VfL Wolfsburg,FC Augsburg
+31.03.-02.04.2023 ,26,FC Schalke 04,Bayer 04 Leverkusen
+31.03.-02.04.2023 ,26,SV Werder Bremen,TSG Hoffenheim
+08./09.04.2023 ,27,Borussia Dortmund,1. FC Union Berlin
+08./09.04.2023 ,27,Bayer 04 Leverkusen,Eintracht Frankfurt
+08./09.04.2023 ,27,Sport-Club Freiburg,FC Bayern München
+08./09.04.2023 ,27,1. FSV Mainz 05,SV Werder Bremen
+08./09.04.2023 ,27,TSG Hoffenheim,FC Schalke 04
+08./09.04.2023 ,27,Borussia Mönchengladbach,VfL Wolfsburg
+08./09.04.2023 ,27,VfL Bochum 1848,VfB Stuttgart
+08./09.04.2023 ,27,FC Augsburg,1. FC Köln
+08./09.04.2023 ,27,Hertha BSC,RB Leipzig
+14.-16.04.2023 ,28,FC Bayern München,TSG Hoffenheim
+14.-16.04.2023 ,28,RB Leipzig,FC Augsburg
+14.-16.04.2023 ,28,1. FC Union Berlin,VfL Bochum 1848
+14.-16.04.2023 ,28,1. FC Köln,1. FSV Mainz 05
+14.-16.04.2023 ,28,Eintracht Frankfurt,Borussia Mönchengladbach
+14.-16.04.2023 ,28,VfL Wolfsburg,Bayer 04 Leverkusen
+14.-16.04.2023 ,28,VfB Stuttgart,Borussia Dortmund
+14.-16.04.2023 ,28,FC Schalke 04,Hertha BSC
+14.-16.04.2023 ,28,SV Werder Bremen,Sport-Club Freiburg
+21.-23.04.2023 ,29,Borussia Dortmund,Eintracht Frankfurt
+21.-23.04.2023 ,29,Bayer 04 Leverkusen,RB Leipzig
+21.-23.04.2023 ,29,Sport-Club Freiburg,FC Schalke 04
+21.-23.04.2023 ,29,1. FSV Mainz 05,FC Bayern München
+21.-23.04.2023 ,29,TSG Hoffenheim,1. FC Köln
+21.-23.04.2023 ,29,Borussia Mönchengladbach,1. FC Union Berlin
+21.-23.04.2023 ,29,VfL Bochum 1848,VfL Wolfsburg
+21.-23.04.2023 ,29,FC Augsburg,VfB Stuttgart
+21.-23.04.2023 ,29,Hertha BSC,SV Werder Bremen
+28.-30.04.2023 ,30,FC Bayern München,Hertha BSC
+28.-30.04.2023 ,30,RB Leipzig,TSG Hoffenheim
+28.-30.04.2023 ,30,1. FC Union Berlin,Bayer 04 Leverkusen
+28.-30.04.2023 ,30,1. FC Köln,Sport-Club Freiburg
+28.-30.04.2023 ,30,Eintracht Frankfurt,FC Augsburg
+28.-30.04.2023 ,30,VfL Wolfsburg,1. FSV Mainz 05
+28.-30.04.2023 ,30,VfL Bochum 1848,Borussia Dortmund
+28.-30.04.2023 ,30,VfB Stuttgart,Borussia Mönchengladbach
+28.-30.04.2023 ,30,FC Schalke 04,SV Werder Bremen
+05.-07.05.2023 ,31,Borussia Dortmund,VfL Wolfsburg
+05.-07.05.2023 ,31,Bayer 04 Leverkusen,1. FC Köln
+05.-07.05.2023 ,31,Sport-Club Freiburg,RB Leipzig
+05.-07.05.2023 ,31,1. FSV Mainz 05,FC Schalke 04
+05.-07.05.2023 ,31,TSG Hoffenheim,Eintracht Frankfurt
+05.-07.05.2023 ,31,Borussia Mönchengladbach,VfL Bochum 1848
+05.-07.05.2023 ,31,FC Augsburg,1. FC Union Berlin
+05.-07.05.2023 ,31,Hertha BSC,VfB Stuttgart
+05.-07.05.2023 ,31,SV Werder Bremen,FC Bayern München
+12.-14.05.2023 ,32,FC Bayern München,FC Schalke 04
+12.-14.05.2023 ,32,Borussia Dortmund,Borussia Mönchengladbach
+12.-14.05.2023 ,32,RB Leipzig,SV Werder Bremen
+12.-14.05.2023 ,32,1. FC Union Berlin,Sport-Club Freiburg
+12.-14.05.2023 ,32,1. FC Köln,Hertha BSC
+12.-14.05.2023 ,32,Eintracht Frankfurt,1. FSV Mainz 05
+12.-14.05.2023 ,32,VfL Wolfsburg,TSG Hoffenheim
+12.-14.05.2023 ,32,VfL Bochum 1848,FC Augsburg
+12.-14.05.2023 ,32,VfB Stuttgart,Bayer 04 Leverkusen
+19.-21.05.2023 ,33,FC Bayern München,RB Leipzig
+19.-21.05.2023 ,33,Bayer 04 Leverkusen,Borussia Mönchengladbach
+19.-21.05.2023 ,33,Sport-Club Freiburg,VfL Wolfsburg
+19.-21.05.2023 ,33,1. FSV Mainz 05,VfB Stuttgart
+19.-21.05.2023 ,33,TSG Hoffenheim,1. FC Union Berlin
+19.-21.05.2023 ,33,FC Augsburg,Borussia Dortmund
+19.-21.05.2023 ,33,Hertha BSC,VfL Bochum 1848
+19.-21.05.2023 ,33,FC Schalke 04,Eintracht Frankfurt
+19.-21.05.2023 ,33,SV Werder Bremen,1. FC Köln
+27.05.2023 15:30   (Sa),34,Borussia Dortmund,1. FSV Mainz 05
+27.05.2023 15:30   (Sa),34,RB Leipzig,FC Schalke 04
+27.05.2023 15:30   (Sa),34,1. FC Union Berlin,SV Werder Bremen
+27.05.2023 15:30   (Sa),34,1. FC Köln,FC Bayern München
+27.05.2023 15:30   (Sa),34,Borussia Mönchengladbach,FC Augsburg
+27.05.2023 15:30   (Sa),34,Eintracht Frankfurt,Sport-Club Freiburg
+27.05.2023 15:30   (Sa),34,VfL Wolfsburg,Hertha BSC
+27.05.2023 15:30   (Sa),34,VfL Bochum 1848,Bayer 04 Leverkusen
+27.05.2023 15:30   (Sa),34,VfB Stuttgart,TSG Hoffenheim

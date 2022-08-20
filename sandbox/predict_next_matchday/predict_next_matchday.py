@@ -7,15 +7,17 @@ import joblib
 from match_classifier.utils import map_names
 from match_classifier.config import FEATURES
 
-matchplan_path = "../../data/current_season/matchplan_2122.csv"
+current_season: str = "2223"
+matchplan_path = f"../../data/current_season/matchplan_{current_season}.csv"
 
 
 def update_current_season():
 
-    matches = f'https://www.football-data.co.uk/mmz4281/2122/D1.csv'
+    matches = f'https://www.football-data.co.uk/mmz4281/{current_season}/D1.csv'
     os.system(f"echo download {matches}")
     os.system(f"wget {matches} ")
-    os.system(f"mv D1.csv ../../data/current_season/s_2122.csv")
+    os.system(f"mv D1.csv ../../data/current_season/s_{current_season}.csv")
+    # os.system(f"curl -o ../../data/current_season/s_{current_season}.csv {matches}")
 
 
 def rename(df):
@@ -40,7 +42,7 @@ def create_twitter_messages(df_predictions: pd.DataFrame, matchday: int) -> Tupl
 
     abbreviations: Dict = {
         "Freiburg": "FRE",
-        "Greuther Furth": "FUE",
+        "Werder Bremen": "SVW",
         "Hoffenheim": "HOF",
         "Hertha": "BSC",
         "M'gladbach": "BMG",
@@ -55,7 +57,7 @@ def create_twitter_messages(df_predictions: pd.DataFrame, matchday: int) -> Tupl
         "FC Koln": "FCK",
         "Union Berlin": "FCU",
         "Bayern Munich": "BAY",
-        "Bielefeld": "BIE",
+        "Schalke 04": "S04",
         "Mainz": "MAI"
     }
 
@@ -81,7 +83,7 @@ if __name__ == "__main__":
     df_matchplan = pd.read_csv(matchplan_path)
     df_matchplan = rename(df_matchplan)
 
-    df_matches_played = pd.read_csv("../../data/current_season/s_2122.csv")
+    df_matches_played = pd.read_csv("../../data/current_season/s_2223.csv")
     df_players = pd.read_csv("../../data/players/players_22.csv")
 
     n_matches_played = len(df_matches_played)

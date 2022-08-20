@@ -24,8 +24,9 @@ Odds will be twittered on every friday.
 
 ### Matches
 
-Match result taken from [here](https://www.football-data.co.uk/).  
-It will be worthy to take a look at [open data repo](https://github.com/statsbomb/open-data)
+* Match result taken from [here](https://www.football-data.co.uk/).  
+* It will be worthy to take a look at [open data repo](https://github.com/statsbomb/open-data)
+* [Buli Box](http://bulibox.de/)
 
 ### Fifa Player Skills
 
@@ -57,6 +58,7 @@ Season | Accuracy | Precision |  AUC
 18/19 | 0.542 | 0.729 | 0.662
 19/20 | 0.52 | 0.698 | 0.654
 20/21 | 0.513 | 0.699 | 0.681
+21/22 | 0.516 | 0.679 | 0.66
 
 One observes a soothing result: These values are not outstanding.
 
