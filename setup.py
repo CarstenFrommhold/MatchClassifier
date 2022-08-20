@@ -22,7 +22,7 @@ setup(
     install_requires=requirements,
     long_description=readme,
     include_package_data=True,
-    name="reco-preprocessing",
+    name="match_classifier",
     package_dir={"": "src"},
     packages=find_packages("src"),
     version=version,
