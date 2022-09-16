@@ -1,6 +1,7 @@
 import pandas as pd
 import pendulum
 import os
+import sys
 import match_classifier.data_prep as data_prep
 from typing import Dict, Tuple
 import joblib
@@ -14,10 +15,13 @@ matchplan_path = f"../../data/current_season/matchplan_{current_season}.csv"
 def update_current_season():
 
     matches = f'https://www.football-data.co.uk/mmz4281/{current_season}/D1.csv'
-    os.system(f"echo download {matches}")
-    os.system(f"wget {matches} ")
-    os.system(f"mv D1.csv ../../data/current_season/s_{current_season}.csv")
-    # os.system(f"curl -o ../../data/current_season/s_{current_season}.csv {matches}")
+
+    if sys.platform == "darwin":  # macos
+        os.system(f"curl -o ../../data/current_season/s_{current_season}.csv {matches}")
+    else:
+        os.system(f"echo download {matches}")
+        os.system(f"wget {matches} ")
+        os.system(f"mv D1.csv ../../data/current_season/s_{current_season}.csv")
 
 
 def rename(df):
@@ -106,6 +110,7 @@ if __name__ == "__main__":
     keep = ["Matchday", "HomeTeam", "AwayTeam"] + FEATURES
     df_prediction_input = data.loc[data.Matchday == next_matchday, keep].reset_index().drop("index", axis=1)
     model = joblib.load("../model/model.p")
+    df_prediction_input[FEATURES].to_csv("cftest.csv")
     predictions = model.predict_proba(df_prediction_input[FEATURES])
     df_odds = pd.DataFrame(predictions, columns=["1", "2", "X"])
     for result in ["1", "2", "X"]:
