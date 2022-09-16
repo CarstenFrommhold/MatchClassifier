@@ -16,8 +16,8 @@ Note that, at the moment, it acts as a playground to do some first steps.
 To start, match outcomes should be predicted. #goals and other kpi are note taken into account so far. 
 A match has three potential outcomes. The home team wins (general marked with "1"), the away team wins ("2") or a draft ("X").  
   
-[<img align="left" width="20px" src="https://cdn-icons-png.flaticon.com/512/733/733579.png" />][twitter]
-Odds will be twittered on every friday.
+[<img align="left" width="20px" src="https://cdn-icons-png.flaticon.com/512/733/733579.png" />][twitter]  
+Workflows contains utils to twitter the predictions. Note that this is turned off at the moment.  
 
 
 ## Data
